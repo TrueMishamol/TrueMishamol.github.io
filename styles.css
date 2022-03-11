@@ -177,18 +177,23 @@ body {
     max-width: 1240px;
 }
 
-.qote p{
+.void {
+    background: #e8e8eb00;
+    color: #FF953C;
+}
+
+.qote p {
     max-width: 1024px;
     margin: 0 auto;
 }
 
-.qote a{
+.qote a {
     color: #FF953C;
     font-style: italic;
     text-decoration:#FF953C;
 }
 
-.qote div{
+.qote div {
     max-width: 1024px;
     margin: auto auto auto auto;
     display: flex;
@@ -196,7 +201,7 @@ body {
     list-style: none;
 }
 
-.qote li{
+.qote li {
     padding: 20px;
     max-height: 100%;
     margin: auto auto auto auto;
@@ -210,7 +215,7 @@ body {
     flex-direction: column;
 }
 
-.qote li img{
+.qote li img {
     max-height: 100%;
     max-width: 100%;
     min-height: 100%;
@@ -227,7 +232,7 @@ body {
     color:#FF953C;
 }
 
-.video div{
+.video div {
     max-width: 1024px;
     margin: auto auto auto auto;
     display: flex;
@@ -236,7 +241,7 @@ body {
     min-width: 100%;
 }
 
-.video li{
+.video li {
     max-height: 100%;
     padding: 20px;
     margin: auto auto auto auto;
@@ -250,14 +255,14 @@ body {
     flex-direction: column;
 }
 
-.video li iframe{
+.video li iframe {
     max-height: 100%;
     max-width: 100%;
     min-height: 100%;
     min-width: 100%;
 }
 
-.button{
+.button {
     max-width: 1024px;
     /*height: 70px;*/
     position: relative;
@@ -294,13 +299,13 @@ body {
     margin: 0 auto; /* auto - значит по центру */
 }
 
-.project p{
+.project p {
     font-style: italic;
     color: #FF953C;
     padding-bottom: 20px;
 }
 
-.project div{
+.project div {
     margin: auto auto auto auto;
     display: flex;
     align-items: center;
@@ -308,12 +313,12 @@ body {
     padding: 0px 20px;
 }
 
-.project div.image{
+.project div.image {
     max-width: 34%;
     padding: 0px 0px;
 }
 
-.project img{
+.project img {
     max-height: 100%;
     max-width: 100%;
     min-height: 100%;
@@ -398,7 +403,7 @@ body {
     max-width: 1124px;
     /*justify-content: center;*/
 }
-.todo p{
+.todo p {
     /*max-width: 1024px;*/
     margin: auto 0;
     padding-left: 50px;
