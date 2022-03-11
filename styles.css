@@ -24,6 +24,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 0px 20px;
+    overflow: hidden; /*Скрыть вышедшие за экран картинки*/
 }
 
 .top-picture {
@@ -39,19 +40,19 @@ body {
 }
 .top-picture img {
     align-items: center;
-    padding: 90px;
+    padding: 90px 0px;
     flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
     padding: rem;
 }
 .top-picture a {
     align-items: center;
-    padding: 40px;
+    padding: 40px 0px;
     flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
     padding: rem;
 }
 .top-picture h1 {
     align-items: center;
-    padding: 90px;
+    padding: 90px 0px;
     flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
     padding: rem;
     color: #E8E8EB;
@@ -80,6 +81,10 @@ body {
     top: 0;
     z-index: 1;
     overflow: visible;/*Не Скрыть вышедшие за экран картинки*/
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .navbar li {
@@ -260,6 +265,10 @@ body {
     bottom: 7px;
     padding-bottom: 10;
     text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .button a {
@@ -485,5 +494,20 @@ body {
     }
 }
 
+@media screen and (max-width: 500px) {
+    .container h1 {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+    .todo {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+}
 
-
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 1rem;
+    }
+}
