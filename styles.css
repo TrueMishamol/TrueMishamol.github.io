@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1E1E39;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-style: bold;
+    color: #1E1E39;
+    text-align: justify;
+}
+
+.container h1 {
+    font-size: 2.8rem;
+    color: #FF953C;
+    letter-spacing: 0.9rem;
+    text-align: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+}
+
+.top-picture {
+    text-align: center;
+    background-size: 100%;
+    background-color: transparent;
+    /*background-position: center;*/
+    background-position-y: top;
+    background-attachment: fixed;
+    color: #E8E8EB;
+    align-items: center;
+    min-height: 256px;
+}
+.top-picture img {
+    align-items: center;
+    padding: 90px;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+    padding: rem;
+}
+.top-picture a {
+    align-items: center;
+    padding: 40px;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+    padding: rem;
+}
+.top-picture h1 {
+    align-items: center;
+    padding: 90px;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+    padding: rem;
+    color: #E8E8EB;
+}
+
+.continuation {
+    height: 1024px;
+    text-align: center;
+    color: #E8E8EB;
+}
+
+.navbar-thickness {
+    background: #FF953C;
+    height: 40px;
+}
+
+.navbar {
+    background: #FF953C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* sticky делает так что пока элемент не достигнет определённого расстояния от верха он будет двигаться */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    overflow: visible;/*Не Скрыть вышедшие за экран картинки*/
+}
+
+.navbar li {
+    display:block;
+}
+
+.navbar a {
+    display:block;
+    background: #FF953C;
+    color: inherit;
+    text-decoration: none;
+    /*float: right;*/
+    height: 50px;
+}
+
+/*Отступы для кнопок с текстом но не для картинок*/
+.navbar a.gap,
+.navbar > ul li ul li a  {
+    padding: 12px 2rem;
+}
+
+.navbar a:hover {
+    color: #E8E8EB;
+    transition: all 0.3s ease;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.navbar li ul {
+    position: absolute;
+    display: none;
+    min-width: 200px;
+}
+
+/*Под-под пункты*/
+.navbar li > ul li ul {
+    right:-200px;
+    top: 0;
+}
+
+.navbar li:hover > ul {
+    display: block;
+} 
+
+.navbar img {
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+}
+
+.navbar img:hover {
+    background: #E8E8EB;
+    transition: all 0.3s ease;
+}
+
+.content-gap {
+    background: #1e1e3900;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    background: #E8E8EB;
+    font-style: italic;
+    padding: 0px;
+    margin: 0 auto; 
+    max-width: 1240px;
+}
+
+.content img {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+.qote {
+    display: flex;
+    justify-content: center;
+    background: #E8E8EB;
+    font-style: italic;
+    padding: 50px;
+    margin: 0 auto; /* auto - значит по центру */
+    max-width: 1240px;
+}
+
+.qote p{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.qote a{
+    color: #FF953C;
+    font-style: italic;
+    text-decoration:#FF953C;
+}
+
+.qote div{
+    max-width: 1024px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.qote li{
+    padding: 20px;
+    max-height: 100%;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    float: none;
+    max-width: 100%;
+    min-width: 35%;
+    flex-direction: column;
+}
+
+.qote li img{
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    padding: 0px 50px 0px 50px;
+    margin: 0 auto; /* auto - значит по центру */
+    max-width: 1240px;
+    color:#FF953C;
+}
+
+.video div{
+    max-width: 1024px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    min-width: 100%;
+}
+
+.video li{
+    max-height: 100%;
+    padding: 20px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    float: none;
+    max-width: 100%;
+    min-width: 50%;
+    flex-direction: column;
+}
+
+.video li iframe{
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.button{
+    max-width: 1024px;
+    /*height: 70px;*/
+    position: relative;
+    margin: 0 auto;
+    bottom: 7px;
+    padding-bottom: 10;
+    text-align: center;
+}
+
+.button a {
+    color: #1E1E39;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    /*user-select: none; /* убирать выделение текста */
+    background: #FF953C;
+    padding: 1.3em 2em;
+    outline: none; /* убирать контур в Mozilla */
+    margin: auto 1em 1em auto;
+    float:right;
+}
+.button a:hover { 
+    color: #E8E8EB;
+    transition: all 0.3s ease;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    max-width: 1024px;
+    margin: 0 auto; /* auto - значит по центру */
+}
+
+.project p{
+    font-style: italic;
+    color: #FF953C;
+    padding-bottom: 20px;
+}
+
+.project div{
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.project div.image{
+    max-width: 34%;
+    padding: 0px 0px;
+}
+
+.project img{
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.slide-container {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden; /*Скрыть вышедшие за экран картинки*/
+    text-align: center;
+}
+.image-container {
+    width: 1000%; /*Количество картинок. Картинок здесь может быть в разы больше чем на слайдере*/
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+}
+.slide-image {
+    width: 10%; /*Одна картинка из их общего количества*/
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.button-container {
+    top: 0px;
+    position: relative;
+    padding: 20px;
+    max-width: 1024px;
+    float:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slide-button {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    background-color: #FF953C;
+    padding: 0px 20px; /*делает кнопки вытянутыми*/
+}
+#slide-image-1:target ~ .image-container {
+    left: 0px;
+}
+#slide-image-2:target ~ .image-container {
+    left: -100%;
+}
+#slide-image-3:target ~ .image-container {
+    left: -200%;
+}
+#slide-image-4:target ~ .image-container {
+    left: -300%;
+}
+#slide-image-5:target ~ .image-container {
+    left: -400%;
+}
+#slide-image-6:target ~ .image-container {
+    left: -500%;
+}
+#slide-image-7:target ~ .image-container {
+    left: -600%;
+}
+#slide-image-8:target ~ .image-container {
+    left: -700%;
+}
+#slide-image-9:target ~ .image-container {
+    left: -800%;
+}
+#slide-image-10:target ~ .image-container {
+    left: -900%;
+}
+
+.todo {
+    display: flex;
+    /*background: #E8E8EB;*/
+    font-style: italic;
+    color:#FF953C;
+    margin: 0 auto;
+    max-width: 1124px;
+    /*justify-content: center;*/
+}
+.todo p{
+    /*max-width: 1024px;*/
+    margin: auto 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.todo svg {
+    height: 90px;
+    width: 90px;
+    min-width: 90px;
+    min-height: 90px;
+}
+.todo-button {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    margin: auto 0;
+    stroke:#FF953C;
+    fill:transparent;
+    stroke-width: 9px;
+    stroke-linecap: butt;
+    stroke-dasharray: 0;
+}
+
+.progress-bar {
+    background-color:#1E1E39;
+    color:#E8E8EB;
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 1240px;
+    min-height: 40px;
+    padding: 0px;
+}
+.progress-bar div {
+    background-color:#FF953C;
+    min-height: 100%;
+    margin: 0 0;
+    justify-content: center;
+}
+.progress-bar p {
+    position: relative;
+    top: -32px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1240px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .navbar {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+
+        align-items: center;
+        height: 256px;
+        padding: 0rem;
+
+        position: relative;
+        position: -webkit-relative;
+    }
+
+    .navbar ul {
+      padding: 0rem;
+    }
+
+    .navbar a.gap {
+        padding: 0.5rem;
+    }
+
+    .qote div{
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .video div{
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .navbar {
+        position: relative;
+        position: -webkit-relative;
+    }
+}
+
+
+
