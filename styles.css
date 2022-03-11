@@ -479,6 +479,9 @@ body {
         flex-direction: column;
     }
 
+    .video {
+        padding: 0px 0px 0px 0px;
+    }
     .video div{
         float: none;
         width: 100%;
