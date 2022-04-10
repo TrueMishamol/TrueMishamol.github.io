@@ -180,11 +180,13 @@ body {
 .void {
     background: #e8e8eb00;
     color: #FF953C;
+    padding: 0 50px 50px 0;
 }
 
 .qote p {
     max-width: 1024px;
     margin: 0 auto;
+
 }
 
 .qote a {
@@ -268,7 +270,7 @@ body {
     position: relative;
     margin: 0 auto;
     bottom: 7px;
-    padding-bottom: 10;
+    /*padding: 10px 0;*/
     text-align: center;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -279,7 +281,6 @@ body {
 .button a {
     color: #1E1E39;
     text-decoration: none; /* убирать подчёркивание у ссылок */
-    /*user-select: none; /* убирать выделение текста */
     background: #FF953C;
     padding: 1.3em 2em;
     outline: none; /* убирать контур в Mozilla */
@@ -492,6 +493,14 @@ body {
         float: none;
         width: 100%;
         flex-direction: column;
+    }
+
+    .button {
+        display: flex;
+        max-width: 100%;
+        float: none;
+        flex-direction:column-reverse;
+        bottom: 21px;
     }
 }
 
