@@ -85,6 +85,7 @@ body {
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+    font-style: bold;
 }
 
 .navbar li {
@@ -125,8 +126,8 @@ body {
 
 /*Под-под пункты*/
 .navbar li > ul li ul {
-    right:-200px;
-    top: 0;
+    right:-120px;
+    top: -50;
 }
 
 .navbar li:hover > ul {
