@@ -146,7 +146,7 @@ body {
 }
 
 .content-gap {
-    background: #1e1e3900;
+    background: none;
     height: 40px;
 }
 
@@ -179,9 +179,9 @@ body {
 }
 
 .void {
-    background: #e8e8eb00;
+    background: none;
     color: #FF953C;
-    padding: 0 50px 50px 0;
+    padding: 25px 50px 50px 50px;
 }
 
 .qote p {
@@ -452,7 +452,15 @@ body {
     max-width: 1240px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 874px) {
+    .navbar > ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 682px) {
 
     .navbar {
         float: none;
@@ -527,5 +535,15 @@ body {
 @media screen and (max-width: 400px) {
     body {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.4rem;
+    }
+    body {
+        font-size: 0.7rem;
     }
 }

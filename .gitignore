@@ -1,5 +1,8 @@
 *desktop.ini
 test/*
+*.jpg~
+*.png~
+*.kra~
 
 mystic_world/*
 bed_edition/*
