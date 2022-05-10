@@ -1,2 +1,2 @@
 # TrueMishamol.github.io
-Хостинг
+mishamol.ru
