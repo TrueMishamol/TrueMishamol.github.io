@@ -3,6 +3,7 @@ test/*
 *.jpg~
 *.png~
 *.kra~
+*.DS_Store
 
 mystic_world/*
 bed_edition/*
