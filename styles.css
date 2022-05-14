@@ -97,7 +97,7 @@ body {
     text-decoration: none;
 }
 /*Отступы для кнопок с текстом но не для картинок*/
-.navbar a.gap,
+.navbar ul.gap li a,
 .navbar > ul li ul li a  {
     padding: 12px 2rem;
 }
@@ -117,7 +117,7 @@ body {
 }
 /*Под-под пункты*/
 .navbar li > ul li ul {
-    right:-120px;
+    right:-50%;
     top: -50;
 }
 .navbar li:hover > ul {
