@@ -6,6 +6,9 @@ tec/*
 *.kra~
 *.DS_Store
 
+college
+sitepreview
+
 mystic_world/*
 bed_edition/*
 bed_edition/Alpha/*
@@ -17,6 +20,3 @@ college/kants_tovari/*
 college/partition/*
 color_theory/*
 
-college/*
-college/3d/*
-college/bionics/*
