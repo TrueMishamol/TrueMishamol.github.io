@@ -41,13 +41,14 @@ body {
     background-position-y: top;
     background-attachment: fixed;
     align-items: center;
-    min-height: 256px;
+    min-height: 25vh;
 }
 .top-picture img {
     align-items: center;
     padding: 90px 0px;
     flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
     padding: rem;
+    max-width: 50%;
 }
 .top-picture a {
     align-items: center;
@@ -477,7 +478,11 @@ body {
     .navbar > ul {
         display: flex;
         justify-content: center;
-        padding: 0;
+        padding: 10px;
+    }
+    .navbar ul.gap li a,
+    .navbar > ul li ul li a  {
+        padding: 2vw 3vw;
     }
 }
 
@@ -563,7 +568,7 @@ body {
 
 @media screen and (max-width: 500px) {
     .container h1 {
-        font-size: 2rem;
+        font-size: 7vw;
         letter-spacing: 0.4rem;
     }
     .todo {
@@ -571,20 +576,103 @@ body {
         width: 100%;
         flex-direction: column;
     }
-}
-
-@media screen and (max-width: 400px) {
     body {
-        font-size: 1rem;
+        font-size: 4vw;
     }
-}
 
-@media screen and (max-width: 300px) {
-    .container h1 {
-        font-size: 1.3rem;
+    .content-gap {
+        height: 8vw;
+    }
+
+    .top-picture img {
+        padding: 18vw 0px;
+    }
+    .top-picture a {
+        padding: 8vw 0px;
+    }
+    .top-picture h1 {
+        padding: 18vw 0px;
+    }
+
+    /* Navbar */
+    .navbar-thickness {
+        height: 8vw;
+    }
+    .navbar {
+        height: 51.2vw;
+    }
+    .navbar ul.gap li a,
+    .navbar > ul li ul li a  {
+        padding: 2.4vw 4.5vw;
+    }
+    .navbar li ul {
+        min-width: 200px;
+    }
+    .navbar img {
+        width: 10vw; 
+        height: 10vw; 
+        padding: 1.8vw;
+    }
+    .navbar a.gap {
+        padding: 1.5vw;
+    }
+
+    /* QOTE - Блоки с текстом */
+    .qote {
+        padding: 10vw;
+    }
+    .void {
+        padding: 5vw 10vw 10vw 10vw;
+    }
+    .qote li {
+        padding: 4vw;
+    }
+
+    /* Кнопки */
+    .button {
+        bottom: 4vw;
+    }
+    .button a {
+        padding: 4vw 6vw;
+        margin: auto 3vw 3vw auto;
+    }
+
+    /* Проект (на главной странице описание с картинками и кнопками) */
+    .project {
+        padding: 0px 4vw;
+    }
+    .project p {
+        padding-bottom: 4vw;
+    }
+    .project div {
+        padding: 0px 4vw;
+    }
+
+    /* Список из заголовков. Картинка - заголовок - кнопка - описание */
+    .header-list {
+        margin: 10vw auto;
+        max-width: 100%;
+    }
+    .header-list a {
+        margin: 10vw auto;
+    }
+    .header-list div{
+        padding: 0 10vw;
+    }
+    .header-list a.button {
+        padding: 4vw 6vw;
+        margin: 0 10vw auto 0;
+    }
+    .header-list h1 {
+        font-size: 7vw;
         letter-spacing: 0.4rem;
     }
-    body {
-        font-size: 0.7rem;
+    .header-list img {
+        margin: 0 auto 4vw auto;
+        height: 20vw;
+        width: 20vw;
+    }
+    .header-list p {
+        margin: 4vw 0 0 0;
     }
 }
