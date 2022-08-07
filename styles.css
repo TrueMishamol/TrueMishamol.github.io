@@ -482,7 +482,7 @@ body {
     }
     .navbar ul.gap li a,
     .navbar > ul li ul li a  {
-        padding: 2vw 3vw;
+        padding: 12px 3vw;
     }
 }
 
