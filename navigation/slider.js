@@ -61,8 +61,8 @@ function slider() {
 
 function rollSlider(i){
     let sliderContainer = sliders[i].querySelector('.slider-container');
-    let width;
-    width = sliders[i].offsetWidth;
+    let width; //для одной картинки
+    width = sliders[i].querySelector('.slider-window').offsetWidth;
 
     if (imageCount[i] >= images[i]) {
         imageCount[i] = 0;
@@ -75,6 +75,7 @@ function rollSlider(i){
     sliderContainer.style.transform = 'translate(-' + imageCount[i] * width + 'px)';
 
     //Arrow buttons position height
+    
     let height;
     height = sliderContainer.offsetHeight;
     let sliderButton = sliders[i].querySelector('.slider-button');
@@ -83,7 +84,7 @@ function rollSlider(i){
 
     if (sliderButton != null) {
         //console.log(height)
-        sliderButton.style.height = ' ' + height/100 * 10 + 'px'; //12vw
+        //sliderButton.style.height = ' ' + height/100 * 10 + 'px'; //12vw
         
         sliderButtonPrev.style.height = ' ' + width/10 + 'px'; //10vw
         sliderButtonPrev.style.bottom = ' ' + (height/2+width/26) + 'px'; //40vw
@@ -91,8 +92,8 @@ function rollSlider(i){
         sliderButtonNext.style.height = ' ' + width/10 + 'px'; //10vw 
         sliderButtonNext.style.bottom = ' ' + (height/2+width/26) + 'px'; //40vw
         
-        /*sliderButtonImgHover.style.height = ' ' + height/100 * 10 + 'px'; //12vw
-        sliderButtonPrev.style.bottom = ' ' + height/2 - height/100 + 'px'; //41vw*/
+        //sliderButtonImgHover.style.height = ' ' + height/100 * 10 + 'px'; //12vw
+        //sliderButtonPrev.style.bottom = ' ' + height/2 - height/100 + 'px'; //41vw
     }
 };
 

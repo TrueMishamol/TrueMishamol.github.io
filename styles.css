@@ -329,9 +329,12 @@ body {
     max-width: 1240px;
     width: 100%;
     margin: auto auto;
-    overflow: hidden;
     max-height: auto;
     height: auto;
+    padding: 25px 0;
+}
+.slider-window {
+    overflow: hidden;
 }
 .slider-container {
     display: flex;
