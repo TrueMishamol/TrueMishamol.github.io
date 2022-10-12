@@ -1,1 +1,0 @@
-http-server C:\Users\mishamol\Drawer\GitHub\TrueMishamol.github.io

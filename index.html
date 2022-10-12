@@ -3,433 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/styles.css" rel="stylesheet">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="/style.css" rel="stylesheet">
     <title>Mishamol</title>
-    <link rel="icon" href="/navigation/favicon.svg" type="images/svg+xml">
-    <link rel="shortcut icon" href="/navigation/favicon.svg" type="images/svg+xml">
+    <link rel="icon" href="/_img/navigation/favicon.svg" type="images/svg+xml">
+    <link rel="shortcut icon" href="/_img/navigation/favicon.svg" type="images/svg+xml">
 
-    <meta property="og:title" content="Mishamol" />
-    <meta property="og:type" content="image/jpeg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image" content="https://www.mishamol/navigation/URL.jpg" />
-    <meta property="og:image:secure_url" content="https://www.mishamol/navigation/URL.jpg" />
-    <meta property="og:image:alt" content="Mishamol" />
-    <meta property="og:image:og:site_name" content="Mishamol" />
+    <!-- SEO tags -->
+    <meta name="description" content="Кто такой Мишамол? Главная страница. Создание сайтов, Комиксы, Майнкрафт, Мыловарение">
+    <meta name="keywords" content="Мишамол, Mishamol, Михаил Молодоженов, Михаил Молодожёнов, Миша Молодоженов, Разработка сайтов, Сделать сайт, Создание сайтов, Вёрстка, Дизайн, Комиксы, Майнкрафт, Мыловарение, Mystic World, Bed Edition, Unstoppable Survival"> <!-- Не больще 20 -->
+    <meta name="Author" content="Mishamol - Михаил Молодожёнов">
+    <meta name="Copyright" content="Mishamol - Михаил Молодожёнов">
+    
+    <!-- Для репостов -->
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="article"> <!-- тип контента, по умолчанию используется article -->
+    <meta property="og:title" content="Mishamol">
+    <meta property="og:site_name" content="Mishamol">
+    <meta property="og:description" content="Мишамол - Главная. Создание сайтов, Вёрстка, Дизайн, Комиксы, Майнкрафт, Мыловарение">
+    <meta property="og:image" content="https://www.mishamol.ru/_img/navigation/URL.jpg"><!-- ссылка на изображение, которое будет публиковаться в записи -->
+    <meta property="og:url" content="https://www.mishamol.ru/"> <!-- ссылка на текущую страницу -->
+
+    <meta name="twitter:card" content="summary"> <!-- Тип карты, по умолчанию используется summary -->
+    <meta name="twitter:site" content="Mishamol"> <!-- Имя/логин автора -->
+    <meta name="twitter:title" content="Mishamol"> <!-- Название страницы -->
+    <meta name="twitter:description" content="Мишамол - Главная. Создание сайтов, Вёрстка, Дизайн, Комиксы, Майнкрафт, Мыловарение">
+    <meta name="twitter:image" content="https://www.mishamol.ru/_img/navigation/URL.jpg">
 </head>
-<body class="container">
+<body>
 
-    <!-- Top Picture -->
-    <div class="top-picture" style="background-image: url('/index/Purple Lake.png')">
-        <a><img src="/navigation/m.svg" style="width: 10rem; opacity: 70%; filter: brightness(3);"></a>
+<!-- Navbar -->
+<!-- <nav class="navbar-thickness"></nav> -->
+<nav class="navbar">
+    <a href="/" class="navbar__m"> <img src="/_img/navigation/m.svg"> </a>
+    <a class="navbar__burger"> <img src="/_img/navigation/m.svg"> </a>
+    <div class="navbar__content">
+        <div class="navbar__group">
+            <!-- <a href="/" class="navbar__m"> <img src="/_img/navigation/m.svg"> </a> -->
+            <ul class="navbar__pages">
+                <li> <a href="/site">Сайты</a> </li>
+                <!-- <li> <a href="/shop">Сувениры</a> -->
+                </li>
+                <li> <a>Истории</a>
+                    <ul>
+                        <li> <a href="/story">Хронология</a></li>
+                        <li><a href="/colorline/final_chaos" class="button">Финальный Хаос</a></li>
+                        <li><a href="/unstoppable_survival">Unstoppable Survival</a></li>
+                        <li><a target="_blank" href="/colorline/Дневник Колорлайна 1.6.pdf">Дневник Колорлайна</a></li>
+                        <li><a target="_blank" href="https://vk.com/album-176267168_280269219">Комикс "Демоны киты"</a></li>
+                    </ul>
+                </li>
+                <!-- <li> <a>Прочее</a>
+                    <ul>
+                        <li> <a href="/minecraft">Майнкрафт</a> </li>
+                        <li> <a href="/college">Колледж - работы</a> </li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+        <div  class="navbar__group">
+            <a target="_blank" href="https://vk.com/mishamol_news"> <img src="/_img/navigation/circles/VK.png"></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCeskH_fQxUv_R5OD9ZXuphA"> <img src="/_img/navigation/circles/YouTube.png"></a>
+            <a target="_blank" href="https://www.dropbox.com/sh/d8r6l69leivwuhw/AABOot6H3d6wDov8L5OZrTXua"> <img src="/_img/navigation/circles/Dropbox.png"></a>
+        </div>
+    </div>
+</nav>
+<!-- <nav class="navbar-thickness"></nav> -->
+<!-- Navbar -->
+    <div class="mishamol-title">
+        <h1>Mishamol</h1>
+        <img src="/_img/navigation/Mishamol.svg" alt="Mishamol">
     </div>
 
-    <!-- Navbar -->
-    <nav class="navbar-thickness"></nav>
-    <nav class="navbar">
-        <ul>
-            <a href="/"> <img src="/navigation/m.svg"> </a>
-        </ul>
-        <ul class="gap">
-            <li> <a>Проекты</a> 
-                <ul>
-                    <li> <a>Майнкрафт</a>
-                        <ul>
-                            <li><a href="/unstoppable_survival">Unstoppable Survival</a></li>
-                            <li><a target="_blank" href="/colorline/Дневник Колорлайна 1.6.pdf">Дневник Колорлайна</a></li>
-                        </ul>
-                    </li>
-                    <li> <a>Коллабы</a>
-                        <ul>
-                            <li><a href="colorline/final_chaos" class="button">Финальный Хаос</a></li>
-                        </ul>
-                    </li>
-                    <li> <a>Другие истории</a>
-                        <ul>
-                            <li><a target="_blank" href="https://vk.com/album-176267168_280269219">Комикс "Демоны киты"</a></li>
-                        </ul>
-                    </li>
-                    <li> <a href="/story">История (хронология)</a></li>
-                    <li><a href="/archive">Старые проекты</a></li>
-                </ul>
-            </li>
-            <li> <a>Работы</a>
-                <ul>
-                    <li> <a href="/portfolio/printpress">Портфолио Печать Пресс</a> </li>
-                    <li> <a href="/site/admiralteyskiy">Пересвет-Юг ЖК "Адмиралтейский"</a> </li>
-                </ul>
-            </li>
-            <li> <a href="/shop">Магазин</a> </li>
-        </ul>
-        <ul>
-            <a target="_blank" href="https://vk.com/mishamol_news"> <img src="/navigation/VK.png"></a>
-            <a target="_blank" href="https://www.youtube.com/channel/UCeskH_fQxUv_R5OD9ZXuphA"> <img src="/navigation/YouTube.png"></a>
-            <a target="_blank" href="https://www.dropbox.com/sh/d8r6l69leivwuhw/AABOot6H3d6wDov8L5OZrTXua"> <img src="/navigation/Dropbox.png"></a>
-        </ul>
-    </nav>
-    <nav class="navbar-thickness"></nav>
-    <!-- Navbar -->
+    <!--* Разработка сайтов -->
+<div class="header-block">
+    <div class="header-block__line"></div>
+    <h2 class="header">Разработка сайтов</h2>
+</div>
 
-    <!-- С кем я работаю -->
-    <ul class="content-gap"> </ul>
-    <h1> С кем я работаю </h1>
+<div class="marquee">
+    <p>
+        <a href="">Лендинг</a>
+        <a href="">Визитка</a>
+        <a href="">Дизайнерский сайт</a>
+        <a href="">Сайт по шаблону</a>
+        <a href="">Java Script</a>
+        <a href="">SASS SCSS CSS</a>
+    </p>
+</div>
 
-    <ul class="qote">
-        <div>
+<div class="cards">
+    <div class="cards__element">
+        <div class="cards__card">
+            <h3 class="title">
+                Акция!
+            </h3>
             <p>
-                Я разрабатываю сайты, рекламную продукцию и др. Моими заказчиками являются большие компании: Пересвет-Юг и Печать Press. А так же частные лица.
+                Уже чуть больше года я учусь вёрстке сайтов, и думаю пришло время взять свои первые заказы! Предлагаю скидку на первые 3 лендинга - всего <a target="_blank" href="https://vk.com/mishamol_news">3.000 руб.</a> 
+                <br>
+                До 10 блоков на странице. 
+                <br>
+                Срок выполнения от 1 недели до 1 месяца. 
+                <br>
+                3 бесплатные правки. 
+                <br>
+                Готов работать по договору оказания услуг.
             </p>
         </div>
-    </ul>
-    <ul class="button">
-        <a target="_blank" href="https://vk.com/mishamol_news" class="button">Связь со мной</a>
-    </ul>
-    <ul class="button">
-        <a href="/site" class="button">Заказать сайт</a>
-    </ul>
-    <ul class="content-gap"> </ul>
-
-    <div class="header-list">
-        <a href="/site/admiralteyskiy">
-            <img src="/index/icons/ug-peresvet.svg">
-            <div>
-                <h1> Пересвет-Юг </h1>
-                <p> Страница сайта для ЖК "Адмиралтейский", ситиборды для ЖК "Квартал" и др. </p>
-            </div>
-        </a>
-        <!-- 
-        <a href="/college/3d">
-            <img src="/navigation/YouTube.png">
-            <div>
-                <h1> 3D Интерьеры </h1>
-                <p> Спсиок заголовков с кем я работал </p>
-            </div>
-        </a>
-         -->
-        <a href="portfolio/printpress">
-            <img src="portfolio/printpress/Иконка.png">
-            <div>
-                <h1> Печать Press </h1>
-                <p> Разработка печатной продукции: прайслисты, баннер. Разработка логотипа копицентра. </p>
-            </div>
-        </a>
+        <div class="buttons">
+            <a href="https://vk.com/mishamol_news" class="buttons">Написать мне ВК</a>
+        </div>
     </div>
-    <!-- С кем я работаю -->
 
-    <!-- 3D интерьеры
-    <ul class="content-gap"> </ul>
-    <h1> 3D Интерьеры </h1>
-    <ul class="qote">
-        <div>
-            <li>
-                <p>
-                    Работы и проекты
-                </p>
-            </li>
-            <li>
-                <img src="college/3d/furniture/Рендер.jpg" style="border-radius: 30px;">
-            </li>
-
-        </div>
-    </ul>
-    <ul class="button">
-        <a href="/college/3d" class="button">Смотреть ></a>
-        <br>
-    </ul>
-    3D интерьеры -->
-
-    <!-- Мой сайт -->
-    <ul class="content-gap"> </ul>
-    <h1> Как я делал свой сайт? </h1>
-    <ul class="qote">
-        <div>
+    <div class="cards__element">
+        <div class="cards__card">
+            <h3 class="title">
+                Дизайн и вёрска
+            </h3>
             <p>
-                Совсем недавно (с 2021 года) я открыл для себя новое творческое направление - создание сайтов и быстро влился в процесс. Если вы такой же начинающий разработчик, как и я, вам будет интересно почитать как я к этому пришёл и зачем мне сайт. А так же я оставил полезные ссылки для обучения с нуля и небольшие подсказки.
+                Адаптивная вёрстка и дизан под компьютеры, планшеты, телефоны и др. устройства. Проверьте сами! Измените размер окна или откройте этот сайт на телефоне! Полный цикл разработки сайта производится мной. Я разрабатываю дизайн, делаю вёрстку. Примеры выполенных работ смотрите в моём портфолио!
             </p>
         </div>
-    </ul>
-    <ul class="qote">
-        <ul class="progress-bar">
-            <div style="width: 51%"> </div>
-            <p> Мой сайт готов уже на 51% </p>
-        </ul>
-    </ul>
-    <ul class="button">
-        <a href="articles/site_dev_story" class="button">Читать ></a>
-        <br>
-    </ul>
-    <!-- Мой сайт -->
+        <div class="buttons">
+            <a href="/site#works" class="buttons">Смотреть все работы ></a>
+        </div>
+    </div>
 
-    <!-- Референсы -->
-    <ul class="content-gap"> </ul>
-    <ul class="qote void">
-        <p> 
-            Ура! Я сделал такой крутой слайдер ))) <br>
-            Посмотрите: моё первое творение на javascript! Теперь он работает, как надо
+    <!-- <div class="cards__element">
+        <div class="cards__card">
+            <h3 class="title">
+                Услуги
+            </h3>
+            <p>
+                Дизйна сайта <br>
+                Вёрстка сайта <br>
+                <br>
+                Разработка логотипа <br>
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="/site" class="buttons">Портфолио</a>
+        </div>
+    </div>
+    <div class="cards__element">
+        <div class="cards__card">
+            <h3 class="title">
+                Адаптив
+            </h3>
+            <p>
+                Сайт будет адаптирован под компьютеры, планшеты, телефоны и др. устройства. Проверьте сами! Измените размер окна или откройте этот сайт на телефоне!
+            </p>
+        </div>
+        <div class="buttons">
+            <a href="Поменять тему сайта" class="buttons">Поменять тему сайта</a>
+        </div>
+    </div> -->
+</div>
+
+<div class="header-list">
+    <a href="/site/2022/admiralteyskiy">
+        <img src="/site/2022/admiralteyskiy/favicon.svg">
+        <div>
+            <h3 class="header"> Пересвет-Юг </h3>
+            <p> Страница сайта для ЖК "Адмиралтейский", ситиборды для ЖК "Квартал" и др. </p>
+        </div>
+    </a>
+    <a href="/site/2022/printpress">
+        <img src="/site/2022/printpress/Иконка.png">
+        <div>
+            <h3 class="header"> ПЕЧАТЬ PRESS </h3>
+            <p> Разработка печатной продукции: прайслисты, баннер. Разработка логотипа копицентра. </p>
+        </div>
+    </a>
+</div>
+
+
+<h3 class="title title_block">Этапы разработки сайта</h3>
+
+<div class="qote">
+    <div>
+        <h3 class="title"> БРИФ </h3>
+        <p>
+            Сначала вы заполняете бриф. Потом мы вместе его обсуждаем. И как только будем готовы приступить к работе - вносим частичную предоплату.
         </p>
-    </ul>
-    <div class="slider">
-        <div class="slider-window">
-            <div class="slider-container">
-                <img src="index/references/Mishamol 2022.png">
-                <img src="index/references/Референсы.png">
-                <img src="index/references/Новые референсы скоро.jpg">
+
+        <h3 class="title">КОПИРАЙТИНГ</h3>
+        <p>
+            Текстовое наполнение желательно дать готовое. Я его немного подправлю, чтобы оно лучше смотрелось на сайте (но всё это конечно мы будем обсуждать в процессе).
+        </p>
+
+        <h3 class="title">ДИЗАЙН</h3>
+        <p>
+            После обсуждения брифа я уже имею чёткое представление о том, какой сайт вы хотите. Поэтому я приступаю к разработке прототипа. Процесс работы присылаю вам. 
+            <br>
+            Далее мы вносим правки и пожелания (3 бесплатные правки). И после - утверждаем окончательный вид прототипа. Как только дизайн утвердили, правки больше вносить нельзя.
+        </p>
+        
+        <p>
+            После того, как вы готовы пустить дизайн в разработку - идёт полная оплата всей дальнейшей работы. Так как правки в дизайн уже вноситься не будут - вы имеете полное представление о финальном продукте.
+        </p>
+
+        <h3 class="title">ВЁРСТКА</h3>
+        <p>
+            Создание адаптивной версии, проверка корректной работы вёрстки.
+            После вёрски сайта, я его отсылаю вам. В силу своего опыта, могу помочь поставить его на хост и настроить.
+            <br>
+            После завершения проекта остаётся ешё 2 недели на внесение окончательных правок.
+        </p>
+    </div>
+</div>
+
+
+    <!--* О себе -->
+    <div class="header-block">
+        <div class="header-block__line"></div>
+        <h2 class="header">О себе</h2>
+    </div>
+
+    <!-- Референсы -->
+    <div class="slider slider_block">
+        <div class="slider__window">
+            <div class="slider__container">
+                <img src="_img/references/Mishamol 2022.png">
+                <img src="_img/references/Референсы.png">
             </div>
         </div>
-        <div class="slider-button">
-            <img class="slider-next" src="/navigation/arrowright.svg">
-            <img class="slider-prev" src="/navigation/arrowleft.svg">
+        <div class="slider__button">
+            <img class="slider__button_next" src="/_img/navigation/arrowright.svg">
+            <img class="slider__button_prev" src="/_img/navigation/arrowleft.svg">
         </div>
-    </div> 
-    <script src="/navigation/slider.js"></script>
+    </div>
     <!-- Референсы -->
 
-    <!-- О себе + ВК -->
-    <h1> О себе </h1>
-    <ul class="qote">
-        <div>
-            <li>
-                <img src="index/Morning.jpg">
-            </li>
-            <li>
-                <p>
-                    Начинающий дизайнер и программист <br>
-                    <br>
-                    Обожаю экспериментировать и воплощать свои идеи в жизнь. Поэтому занимаюсь множеством абсолютно разных проектов: начиная от мыловарения, заканчивая созданием этого сайта. <br>
-                    <br>
-                    Так же я учёный майнкрафтовских наук, рисую комиксы, придумываю истории, участвую в небольших коллабах. <br>
-                    <br>
-                    Думаю хватит обо мне, перейдём к делу
-                </p>
-            </li>
-        </div>
-    </ul>
+    <div class="marquee">
+        <p>
+            <a href="">WEB дизайнер</a>
+            <a href="">Дизайнер интерьеров</a>
+            <a href="">Верстальщик</a>
+            <a href="">Учёный майнкрафтовских наук</a>
+            <a href="">Иллюстратор</a>
+            <a href="">Летсплейшик</a>
+            <a href="">Программист</a>
+            <a href="">Мыловар</a>
+            <a href="">Мишамол</a>
+        </p>
+    </div>
+    <div class="qote">
+        <!-- <img src="_img/Morning.jpg"> -->
+        <p>
+            Дизайнер, программист. Обожаю экспериментировать и воплощать свои идеи в жизнь. Поэтому занимаюсь координально разными интересностями: начиная от мыловарения и заканчивая созданием этого сайта.
+        </p>
+        <p>
+            Так же я учёный майнкрафтовских наук, рисую комиксы, придумываю истории, участвую в небольших коллабах и многое другое. Что же, думаю хватит обо мне, перейдём к делу: вы можете связаться со мной в ВК.
+        </p>
+    </div>
 
     <div class="header-list">
-        <a href="https://vk.com/mishamol_news" target="_blank">
-            <img src="/navigation/VK.png">
+        <a href="https://vk.com/mishamol" target="_blank">
+            <img src="/_img/navigation/circles/VK.png">
             <div>
-                <h1> Мой VK </h1>
+                <h3 class="header"> Мой VK </h3>
                 <p> Опишите своё предложение в первом сообщении, чтобы я его сразу увидел </p>
             </div>
         </a>
     </div>
-    <!-- О себе + ВК-->
 
-    <!-- Магазин -->
-    <ul class="content-gap"> </ul>
-    <h1> Мыло ручной работы </h1>
-    <ul class="qote">
-        <div id="vk_post_212345766_228"></div>
-        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
-        <script type="text/javascript">
-        (function() {
-            VK.Widgets.Post("vk_post_212345766_228", 212345766, 228, 'd9N-h2lSI1ea6gNG8Xodr8YZxQu9');
-        }());
-        </script>
-    </ul>
-    <ul class="button">
-        <a target="_blank" href="https://vk.com/mishamol_news" class="button">Заказать ></a>
-        <br>
-    </ul>
-    <!-- Магазин -->
+    <!--* Истории -->
+    <div class="header-block">
+        <div class="header-block__line"></div>
+        <h2 class="header">Истории</h2>
+    </div>
 
-    <!-- Майнкрафт -->
-    <ul class="content-gap"> </ul>
-    <h1> Колорлайн </h1>
-    <ul class="video">
-        <div>
-            <li style="background-color: #FF953C;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WYgGmzpkBPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </li>
-            <li >
-                <p>
-                    Красивая и эпичная работа вышла как раз в срок ко деню рождения Скулбоя, поздравляю!<br>
-                    <br>
-                    Последние 2 месяца, я помогал Суфле с созданием клипа "Последний Хаос". События, которые должны войти во второй дневник Колорлайна и стать завершением основной истории. Эту историю вкратце вы можете прочитать прямо сейчас!<br>
-                    <br>
-                    Блин я понимаю, что не предложив сделать монтаж в самом начале, никакого клипа даже не было бы! То, какую грандиозную работу Суфле проделала просто потому что у неё появилась возможность связать все кадры в единый клип - поражает!<br>
-                </p>
-            </li>
-        </div>
-    </ul>
-    <ul class="button">
-        <a href="colorline/final_chaos" class="button">Читать историю ></a>
-        <br>
-    </ul>
+    <!-- Слайдер -->
+    <div class="slider slider_block">
+        <div class="slider__window">
+            <div class="slider__container">
 
-    <ul class="content-gap"> </ul>
-    <ul class="qote">
-        <div>
-            <li>
-                <img src="colorline/Обложка.png">
-            </li>
-            <li>
-                <p>
-                    История о маленьком майнкрафт сервере... Вызывает ностальгию, как будто из 2019 года, когда Скулбой ещё делал комиксы <br>
-                    <br>
-                    Для всех кто ждёт историй про майнкрафт, предлагаю прочитать этот дневник. Скулбой там был, он подтверждает, что все события в нем - сущая правда. Рассказ для всех тех, кто хотел узнать каково это играть вместе со Скулбоем ))<br>
-                    <br>
-                    После того, как Скулбой собрал армию для победы на Пиксель батле, все участники вместе отправились возводить ему статую. Что произошло дальше?.. Какой Хаос подстерегал их в этом мире?
-                </p>
-            </li>
-        </div>
-    </ul>
-    <ul class="button">
-        <a target="_blank" href="colorline/Дневник Колорлайна 1.6.pdf" class="button">Читать ></a>
-        <br>
-    </ul>
-
-    <ul class="content-gap"> </ul>
-    <ul class="qote">
-        <p>Вау, крутой сайт!</p>
-    </ul>
-
-    <ul class="content-gap"> </ul>
-    <h1> Unstoppable Survival </h1>
-    <ul class="qote">
-        <div>
-            <li>
-                <img src="./unstoppable_survival/Aether.png">
-            </li>
-            <li>
-                <p>
-                    Немного устаревший летсплей по майнкрафту, который вам всё ещё может понравиться! <br>
-                    <br>
-                    Это наше приключение в майнкрафт, вместе с бабушкой и братом <br>
-                    <br>
-                    Уникальные идеи и механики, путешествия по разным мирам с сюжетом, новые изобретения и открытия. Unstoppable Survival поделён на 3 сезона, каждый из которых в определённой мере посвящён одному из нас. 
-                </p>
-            </li>
-        </div>
-    </ul>
-    <ul class="button">
-        <a href="./unstoppable_survival" class="button">Смотреть ></a>
-        <br>
-    </ul>
-    <!-- Майнкрафт -->
-
-    <!-- Архив -->
-    <ul class="content-gap"> </ul>
-    <h1> Старые проекты </h1>
-    <ul class="qote">
-        <div>
-            <li>
-                <p>
-                    Работы и проекты в архиве: <br>
-                    <br>
-                    Моды по майнкрафту<br>
-                    Старые портфолио<br>
-                    Старый комикс<br>
-                </p>
-            </li>
-            <li class="small">
-                <img src="minecraft/trash_mod/logo.png" style="border-radius: 30px;">
-            </li>
-        </div>
-    </ul>
-    <ul class="button">
-        <a href="./archive" class="button">Смотреть ></a>
-        <br>
-    </ul>
-    <!-- Архив -->
-
-    <!-- Проекты на будущее -->
-    <ul class="content-gap"> </ul>
-    <ul class="qote">
-        <p> 
-            Ждите обновлений! На сайте должны быть собраны все мои проекты. Сейчас я работаю над их оформлением, доработкой и обновлением для сайта )
-        </p>
-    </ul>
-    <ul class="qote">
-        <ul class="progress-bar">
-            <div style="width: 33%"> </div>
-            <p> Добавлено 5 из 15 запланированных статей </p>
-        </ul>
-    </ul>
-    <ul class="qote">
-        <ul class="progress-bar">
-            <div style="width: 0%"> </div>
-            <p> Добавлено 0 из 15 статей по колледжу </p>
-        </ul>
-    </ul>
-
-    <!--
-    <ul class="content-gap"> </ul>
-    <ul class="project">
-        <div class="image">
-            <img src="Bed Edition/Bed Edition Icon beta.png">
-        </div>
-        <div>
-            <li>
-                <h1> Bed Edition </h1>
-                <p>
-                    Beta - это не релиз <br>
-                    Подходит ни для чего ))) <br>
-                    А ещё вы можете прочитать статью с концптартами <br>
-                    Или посетить вики страницу <br>
-                </p>
-                <ul class="button">
-                    <a target="_blank" href="https://slime-rancher-widymki.fandom.com/ru/wiki/Bed_Edition" class="button">Вики</a>
-                    <br>
-                </ul>
-            </li>
-        </div>
-    </ul>
-    <ul class="qote">
+                <div>
+<div class="qote">
+    <div><img src="/unstoppable_survival/_img/Aether.jpg"></div>
+    <div>
+        <h3 class="title"> Unstoppable Survival </h3>
         <p>
-            Bed Edition - это фанатская выдумка - дополнение к игре Slime Rancher, представленная в виде иллюстраций и текста. Сейчас данная версия не существует в игре и является лишь идеей. <br>
+            Немного устаревший летсплей по майнкрафту, который вам всё ещё может понравиться! <br>
             <br>
-            Bed Edition включает в себя интересные концепты нового оборудования, смешные и бредовые идеи и отдельный лор. <br>
+            Это наше приключение в майнкрафт, вместе с бабушкой и братом <br>
             <br>
-            Основателем Bed Edition являюсь я, соавтором, мой брат Андрей. Так же участники фендома могли предлагать нам различные идеи или названия, но об этом далее в статье...
+            Уникальные идеи и механики, путешествия по разным мирам с сюжетом, новые изобретения и открытия. Unstoppable Survival поделён на 3 сезона, каждый из которых в определённой мере посвящён одному из нас.
         </p>
-    </ul>
-    <ul class="button">
-        <a href="./bed_edition" class="button">Читать статью</a>
-        <br>
-    </ul>
-    -->
+    </div>
+</div>
+<div class="buttons buttons_block">
+    <a href="/unstoppable_survival/" class="button">Смотреть ></a>
+    <br>
+</div>                </div>
 
-    <!--
-    <ul class="content-gap"> </ul>
-    <ul class="project">
-        <div class="image">
-            <img src="Mystic World/pack512.png">
-        </div>
-        <div>
-            <li>
-                <h1> Mystic World </h1>
-                <p>
-                    2.0 - последняя версия датапака
-                    для майнкрафта 1.13 <br>
-                </p>
-                <ul class="button">
-                    <a target="_blank" href="https://www.dropbox.com/sh/d8r6l69leivwuhw/AABOot6H3d6wDov8L5OZrTXua" class="button">Другие <br> версии </a>
-                    <a target="_blank" href="https://www.dropbox.com/sh/d8r6l69leivwuhw/AABOot6H3d6wDov8L5OZrTXua" class="button">Скачать 2.0 <br> для 1.13</a>
-                    <br>
-                </ul>
-            </li>
-        </div>
-    </ul>
-    <ul class="qote">
+                <div>
+                    <h3 class="title title_block"> Финальный Хаос </h3>
+                    <div class="qote qote_void">
+                        <div class="qote__video qote__video_fav">
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WYgGmzpkBPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="colorline/final_chaos" class="buttons">Читать историю ></a>
+                    </div>
+                </div>
+
+                <div>
+<div class="qote">
+        
+    <div><img src="/colorline/_img/cover.png"></div>
+    <div>
+        <h3 class="title"> Дневник Колорлайна </h3>
         <p>
-            Mystic World - это датапак для Майнкрафта. Он добавляет новые крафты и материалы, уникальные предметы и артефакты для продвинутых игроков, а так же интересные испытания: например нового босса. <br>
+            История о маленьком майнкрафт сервере... Вызывает ностальгию, как будто из 2019 года, когда Скулбой ещё делал комиксы <br>
             <br>
-            Вы будете изучать и продвигаться по этому дополнению постепенно. Начнёте с создания простых улучшений на инструменты, потом уже сможете создать бесконечное топливо для печей и закончите прохожденние крафтом из бедрока, меняющим мир. Всё самое интересное о прохождении читайте в статье.
+            Для всех кто ждёт историй про майнкрафт, предлагаю прочитать этот дневник. Скулбой там был, он подтверждает, что все события в нем - сущая правда. Рассказ для всех тех, кто хотел узнать каково это играть вместе со Скулбоем ))<br>
+            <br>
+            После того, как Скулбой собрал армию для победы на Пиксель батле, все участники вместе отправились возводить ему статую. Что произошло дальше?.. Какой Хаос подстерегал их в этом мире?
         </p>
-    </ul>
-    <ul class="button">
-        <a href="./mystic_world" class="button">Читать о <br> датапаке</a>
-        <br>
-    </ul>
-    -->
+    </div>
+</div>
+<div class="buttons buttons_block">
+    <a target="_blank" href="/colorline/Дневник Колорлайна 1.6.pdf" class="button">Читать ></a>
+</div>                </div>
 
+            </div>
+        </div>
+        <div class="slider__button">
+            <img class="slider__button_next" src="/_img/navigation/arrowright.svg">
+            <img class="slider__button_prev" src="/_img/navigation/arrowleft.svg">
+        </div>
+    </div>
+    <!-- Слайдер -->
+
+<h3 class="title title_block"> Хронология основной истории </h3>
+<div class="qote">
+    <p> 
+        Комикс Before the story (ещё не вышел)<br>
+        <br>
+        Комикс Mixturing (ещё не вышел)<br>
+        <br>
+        Bed Edition (ещё не вышел)<br>
+        <br>
+        <a href="/unstoppable_survival">Unstoppable Survival</a> 2017 - 2019<br>
+        <br>
+        <a target="_blank" href="/colorline/Дневник Колорлайна 1.6.pdf">Дневник Колорлайна</a> 2019 - 2020<br>
+        <br>
+        Комикс Круиз 2020 - коллаб (ещё не вышел)<br>
+        <br>
+        <a href="/colorline/final_chaos">Последний Хаос - коллаб</a> 2022<br>
+        <br>
+        История какие-то мини комиксы (ещё не вышли)<br>
+        <br>
+        Комиксы Chaos Crystal (ещё не вышли)<br>
+    </p>
+</div>
+
+<h3 class="title title_block"> Другие истории </h3>
+
+<div class="qote">
+    <p> 
+        <a target="_blank" href="https://vk.com/album-176267168_280269219">Комикс "Демоны киты"</a> 2021<br>
+    </p>
+</div>
     <div class="continuation"> </div>
 
-    <div class="qote">
+    <div class="qote qote_center">
         <p> Вы долистали до самого низа. Ура! </p> 
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>
