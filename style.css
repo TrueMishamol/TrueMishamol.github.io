@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Zeroing */
-.qote, .title_block, .slider_block, .header-list, .header-block, .buttons_block {
+.qote, .title_block, .stickers, .slider_block, .header-list, .header-block, .buttons_block {
   display: block;
   margin: 20px auto 40px;
   width: 100%;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 @media screen and (max-width: 800px) {
-  .qote, .title_block, .slider_block, .header-list, .header-block, .buttons_block {
+  .qote, .title_block, .stickers, .slider_block, .header-list, .header-block, .buttons_block {
     padding-left: 8vw;
     padding-right: 8vw;
     margin: 2vw auto 4vw;
@@ -798,6 +798,51 @@ html, body {
 @media screen and (max-width: 800px) {
   .slider__button_prev {
     left: 3vw;
+  }
+}
+
+.stickers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.stickers img {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .stickers img {
+    -ms-flex-preferred-size: 33.33%;
+        flex-basis: 33.33%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .stickers img {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .stickers img {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+}
+@media screen and (max-width: 250px) {
+  .stickers img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
