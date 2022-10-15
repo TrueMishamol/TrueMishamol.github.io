@@ -576,15 +576,13 @@ html, body {
 
 .stickers {
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
     flex-wrap: wrap;
     @extend %margin-block;
     justify-content: center;
 
     img {
-        flex-basis: 25%;
         width: 10px;
+        flex-basis: 25%;
 
         @media screen and (max-width: 1000px) {
             flex-basis: 33.33%;
