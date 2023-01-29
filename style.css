@@ -169,6 +169,8 @@ html, body {
   background: #FF953C;
   padding: 25px 40px;
   margin: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 800px) {
   .buttons a {
@@ -182,8 +184,8 @@ html, body {
 }
 .buttons a:hover {
   color: #E8E8EB;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
 }
 
 .cards {
@@ -269,7 +271,14 @@ html, body {
   }
 }
 .cards__card a {
+  display: inline-block;
   color: #FF953C;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cards__card a:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
 }
 @media screen and (max-width: 1000px) {
   .cards__card {
@@ -342,6 +351,7 @@ html, body {
 
 .header-list {
   text-align: left;
+  overflow: visible;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -366,6 +376,10 @@ html, body {
 .header-list a:first-child {
   margin-top: 0;
 }
+.header-list a:hover img {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
 .header-list div {
   display: block;
   padding: 0 0 0 40px;
@@ -383,6 +397,8 @@ html, body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 800px) {
   .header-list img {
@@ -597,6 +613,8 @@ html, body {
 .navbar__pages > li > ul {
   position: absolute;
   display: none;
+  -webkit-transform: translate(-25%, 0);
+          transform: translate(-25%, 0);
 }
 .navbar__pages > li > ul > li a {
   padding: 12px 20px;
@@ -781,6 +799,8 @@ html, body {
 .slider__button img:hover {
   -webkit-filter: invert(92%) sepia(25%) saturate(0%) hue-rotate(332deg) brightness(85%) contrast(101%);
           filter: invert(92%) sepia(25%) saturate(0%) hue-rotate(332deg) brightness(85%) contrast(101%);
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
 }
 .slider__button_next {
   float: right;
@@ -998,6 +1018,13 @@ html, body {
 }
 .qote a {
   color: #FF953C;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.qote a:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
 }
 .qote__small {
   max-width: 35%;

@@ -129,9 +129,10 @@ html, body {
         background: $orichalc;
         @include w800(padding, 25px 40px, 4vw 6vw);
         @include w800(margin, 10px, 2vw);
+        transition: all 0.3s ease;
         &:hover { 
             color: $cobalt_milky;
-            transition: all 0.3s ease;
+            transform: scale(102%);
         }
     }
 }
@@ -178,7 +179,12 @@ html, body {
             @include w800(margin, 20px auto 30px, 3vw auto 4vw);
         }
         a {
+            display: inline-block;
             color: #FF953C;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(102%);
+            }
         }
         @media screen and (max-width: 1000px) {
             height: auto;
@@ -237,11 +243,13 @@ html, body {
     h1,h2{
         @include w800(padding, 15px $window_padding, 2vw $window_padding_vw);
     }
+
 }
 
 .header-list {
     text-align: left;
     @extend %margin-block;
+    overflow: visible;
     width: fit-content;
     @media screen and (max-width: $window_max_width) {
         max-width: 100%;
@@ -250,8 +258,12 @@ html, body {
         max-width: inherit;
         @include w800(margin, $margin_between_blocks auto, $margin_between_blocks_vw auto);
         display: flex;
+
         &:first-child {
             margin-top: 0;
+        }
+        &:hover img {
+            transform: scale(105%);
         }
     }
     div {
@@ -263,6 +275,7 @@ html, body {
         @include w800(width, 100px, 13vw);
         object-fit: contain;
         align-self: center;
+        transition: all 0.3s ease;
     }
     p {
         width: 100%;
@@ -270,7 +283,7 @@ html, body {
         color: #FF953C;
         font-style: italic;
         font-weight: 400;
-    }
+    }    
 }
 
 // Marquee
@@ -412,12 +425,13 @@ html, body {
                 position: absolute;
                 // margin: auto;
                 // right: 50%;
-                // left: 0%;
+                // right: 0;
                 display: none;
                 // min-width: 200px;
                 > li a {
                     padding: 12px 20px;
                 }
+                transform: translate(-25%, 0);
             }
             &:hover > ul {
                 display: block;
@@ -442,6 +456,10 @@ html, body {
         @include w600(height, 50px, 10vw);
         padding: 0.6rem;
     }
+}
+
+.navbar-2 {
+
 }
 
 .project {
@@ -561,6 +579,7 @@ html, body {
             filter: invert(67%) sepia(25%) saturate(1982%) hue-rotate(332deg) brightness(104%) contrast(101%);
             &:hover {
                 filter: invert(92%) sepia(25%) saturate(0%) hue-rotate(332deg) brightness(85%) contrast(101%);
+                transform: scale(105%);
             }
         }
         &_next {
@@ -704,6 +723,11 @@ html, body {
     }
     a {
         color: #FF953C;
+        display: inline-block;
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(102%);
+        }
     }
     &__small {
         max-width: 35%;
