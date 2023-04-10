@@ -1,0 +1,76 @@
+
+.slider {
+    position: relative;
+    padding: 0;
+    &_block {
+        @extend %margin-block;
+        padding: 0;
+        // max-width: $window_max_width;
+        max-width: $window_max_width + 230px;
+        .slider__container > img {
+            max-height: 90vh;
+        }
+        .slider__window {
+            max-width: $window_max_width; // Уник
+            margin: auto; // Уник
+        }
+    }
+    &__window {
+        display: block;
+        overflow: hidden;
+        max-height: inherit;
+        height: 100%;
+    }
+    &__container {
+        display: flex;
+        transition: all ease 1s;
+        max-height: inherit;
+        height: 100%;
+        &>* {
+            align-self: center;
+            width: 100%;
+            min-width: 100%;
+            height: 100%;
+            max-height: inherit;
+            min-height: 100%;
+            object-fit: contain;
+            margin: auto;
+            &>.buttons_block{
+                margin-bottom: 0;
+            }
+            &>.title_block{
+                margin-top: 0;
+            }
+        }
+        .qote {
+            margin-top: 0;
+        }
+    }
+    &__button {
+        user-select: none;
+        height: 0;
+        position: absolute;
+        width: 100%;
+        img {
+            transition: all ease 0.3s;
+            height: 10vw;
+            display: block;
+            position: relative;
+            padding: 0px;
+            margin: 0;
+            filter: invert(67%) sepia(25%) saturate(1982%) hue-rotate(332deg) brightness(104%) contrast(101%);
+            &:hover {
+                filter: invert(92%) sepia(25%) saturate(0%) hue-rotate(332deg) brightness(85%) contrast(101%);
+                transform: scale(105%);
+            }
+        }
+        &_next {
+            float: right;
+            @include w800(right, 20px, 3vw);
+        }
+        &_prev {
+            float: left;
+            @include w800(left, 20px, 3vw);
+        }
+    }
+}

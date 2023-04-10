@@ -1,0 +1,22 @@
+.progress-bar {
+    background-color:#1E1E39;
+    color:$cobalt_milky;
+    margin: 0 auto;
+    min-width: 100%;
+    max-width: 1240px;
+    min-height: 40px;
+    padding: 0px;
+    div {
+        background-color: $orichalc;
+        min-height: 100%;
+        margin: 0 0;
+        justify-content: center;
+    }
+    p {
+        position: relative;
+        top: -32px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 1240px;
+    }
+}

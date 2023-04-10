@@ -1,0 +1,85 @@
+// Отступы
+$window_max_width: 1240px;
+
+$window_padding: 80px;
+$window_padding_vw: 8vw;
+
+$margin_between_blocks: 40px;
+$margin_between_blocks_vw: 4vw;
+
+%margin-block {
+    display: block;
+    margin: $margin_between_blocks/2 auto $margin_between_blocks;
+    width: 100%;
+    max-width: $window_max_width + $window_padding*2;
+    padding-left: $window_padding;
+    padding-right: $window_padding;
+    overflow: hidden;
+    @media screen and (max-width: 800px) {
+        padding-left: $window_padding_vw;
+        padding-right: $window_padding_vw;
+        margin: $margin_between_blocks_vw/2 auto $margin_between_blocks_vw;
+    }
+}
+
+// Adaptive mixins
+@mixin w800($property, $px, $vw) {
+    #{$property}: $px;
+    @media screen and (max-width: 800px) {
+        #{$property}: $vw;
+    }
+}
+@mixin w600($property, $px, $vw) {
+    #{$property}: $px;
+    @media screen and (max-width: 600px) {
+        #{$property}: $vw;
+    }
+}
+@mixin h800($property, $px, $vh) {
+    #{$property}: $px;
+    @media screen and (max-height: 800px) {
+        #{$property}: $vh;
+    }
+}
+
+// Font sizes
+$header_fz: 50px;
+$header_fz_vw: 6vw;
+%header_fz {
+    font-size: $header_fz;
+    @media screen and (max-width: 800px) {
+        font-size: $header_fz_vw;
+    }
+}
+$title_fz: 30px;
+$title_fz_vw: 4vw;
+%title_fz {
+    font-size: $title_fz;
+    @media screen and (max-width: 800px) {
+        font-size: $title_fz_vw;
+    }
+}
+$marquee_fz: 25px;
+$marquee_fz_vw: 3.5vw;
+%marquee_fz {
+    font-size: $marquee_fz;
+    @media screen and (max-width: 800px) {
+        font-size: $marquee_fz_vw;
+    }
+}
+$text_fz: 18px;
+$text_fz_vw: 3.2vw;
+%text_fz {
+    font-size: $text_fz;
+    @media screen and (max-width: 600px) {
+        font-size: $text_fz_vw;
+    }
+}
+// $notes_fz: 14px;
+// $notes_fz_vw: 1.8vw;
+// %notes_fz {
+//     font-size: $notes_fz;
+//     @media screen and (max-width: 800px) {
+//         font-size: $notes_fz_vw;
+//     }
+// }

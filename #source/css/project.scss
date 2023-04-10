@@ -1,0 +1,30 @@
+.project {
+    display: flex;
+    justify-content: center;
+    padding: 0px 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    p {
+        font-style: italic;
+        font-weight: 400;
+        color: $orichalc;
+        padding-bottom: 20px;
+    }
+    div {
+        margin: auto auto auto auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0px 20px;
+        &.image {
+            max-width: 34%;
+            padding: 0px 0px;
+        }
+    }
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}

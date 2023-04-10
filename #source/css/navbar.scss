@@ -1,0 +1,116 @@
+
+.navbar {
+    background: $orichalc;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: sticky;
+    @include w600(position, sticky, relative);
+    @include h800(position, sticky, relative);
+    top: 0;
+    z-index: 1;
+    overflow: visible;
+    font-style: normal;
+    font-weight: 700;
+    color: $cobalt;
+    @extend %text_fz;
+    user-select: none;
+
+    &__burger {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        // &__m {
+        //     display: none;
+        // }
+        // &__burger {
+        //     display: block;
+        //     &:hover + .navbar__content {
+        //         display: block;
+        //         background: none;
+        //     }
+        // }
+        // position: fixed;
+        top: 0;
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+        // display: none;
+        // display: block;
+
+        flex-direction: column;
+
+        .navbar__content {
+            flex-direction: column;
+            // display: none;
+        }
+        &__pages {
+            flex-direction: column;
+        }
+    }
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+        max-width: $window_max_width;
+        img {
+            &:hover {
+                background: $cobalt_milky;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    &__group {
+        display: flex;
+        justify-content: center;
+    }
+    //Первый уровень
+    &__pages { 
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+        // width: 100%;
+        > li {
+            display:block;
+            padding: 12px 20px;
+            //Второй уровень
+            > ul { 
+                position: absolute;
+                // margin: auto;
+                // right: 50%;
+                // right: 0;
+                display: none;
+                // min-width: 200px;
+                > li a {
+                    padding: 12px 20px;
+                }
+                transform: translate(-25%, 0);
+            }
+            &:hover > ul {
+                display: block;
+            }
+        }
+        a {
+            display:block;
+            background: $orichalc;
+            color: inherit;
+            text-decoration: none;
+            &:hover {
+                color: $cobalt_milky;
+                transition: all 0.3s ease;
+            }
+        }
+    }
+    img {
+        align-items: center;
+        display: flex;
+        flex-direction: column; /* по всей высоте */
+        @include w600(width, 50px, 10vw);
+        @include w600(height, 50px, 10vw);
+        padding: 0.6rem;
+    }
+}

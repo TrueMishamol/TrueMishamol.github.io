@@ -1,0 +1,22 @@
+.mishamol-title {
+    position: relative;
+    h1 {
+        position: absolute;
+        @include w800(font-size, 70px, 10vw);
+        overflow: hidden;
+        // @include w800(line-height, 70px, 80vw);
+        color: $invisible;
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        display: block;
+        @include w800 (height, 70px, 20vw);
+        width: 100%;
+        max-width: $window_max_width;
+        @include w800 (padding, 0 $window_padding, 0 $window_padding_vw);
+        @include w800(margin, $window_padding auto, $window_padding_vw auto);
+    }
+}

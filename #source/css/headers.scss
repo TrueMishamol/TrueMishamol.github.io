@@ -1,0 +1,77 @@
+
+.header {
+    color: $orichalc;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0.9rem;
+    @extend %header_fz;
+}
+
+.header-block {
+    @extend %margin-block;
+    max-width: $window_max_width;
+    padding: 0;
+    border-top: 3px $orichalc solid;
+    border-bottom: 3px $orichalc solid;
+    text-align: center;
+    &__line {
+        height: 19px;
+        border-bottom: 3px $orichalc solid;
+    }
+    h1,h2{
+        @include w800(padding, 15px $window_padding, 2vw $window_padding_vw);
+    }
+
+}
+
+.header-list {
+    text-align: left;
+    @extend %margin-block;
+    overflow: visible;
+    width: fit-content;
+    @media screen and (max-width: $window_max_width) {
+        max-width: 100%;
+    }
+    a {
+        max-width: inherit;
+        @include w800(margin, $margin_between_blocks auto, $margin_between_blocks_vw auto);
+        display: flex;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &:hover img {
+            transform: scale(105%);
+        }
+    }
+    div {
+        display:block;
+        @include w800(padding, 0 0 0 40px, 0 0 0 5vw);
+    }
+    img {
+        @include w800(height, 100px, 13vw);
+        @include w800(width, 100px, 13vw);
+        object-fit: contain;
+        align-self: center;
+        transition: all 0.3s ease;
+    }
+    p {
+        width: 100%;
+        margin: 5px 0 0 0;
+        color: $orichalc;
+        font-style: italic;
+        font-weight: 400;
+    }    
+}
+
+.title {
+    @extend %title_fz;
+    text-align: center;
+    &_block {
+        color: $orichalc;
+        width: fit-content;
+        overflow: hidden;
+        @extend %margin-block;
+        @include w800(margin, $margin_between_blocks auto $margin_between_blocks/2, $margin_between_blocks_vw auto $margin_between_blocks_vw/2);
+    }
+}

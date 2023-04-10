@@ -1,0 +1,24 @@
+.buttons {
+    user-select: none;
+    &_block{
+        max-width: $window_max_width;
+        @extend %margin-block;
+        @include w800(margin, -40px - $margin_between_blocks auto $margin_between_blocks, -8vw - $margin_between_blocks_vw 0 $margin_between_blocks_vw);
+    }
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    a {
+        display: inline-block;
+        max-width: fit-content;
+        color: $cobalt;
+        background: $orichalc;
+        @include w800(padding, 25px 40px, 4vw 6vw);
+        @include w800(margin, 10px, 2vw);
+        transition: all 0.3s ease;
+        &:hover { 
+            color: $cobalt_milky;
+            transform: scale(102%);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+html, body {
+    background-color: $cobalt;
+    font-family: 'Montserrat', sans-serif;
+    @extend %text_fz;
+    font-style: normal;
+    font-weight: 400;
+    color: red;
+    text-align: justify;
+    line-height: 1.4;
+
+    background-image: url("/img/navigation/background-vector.svg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: 120vw;
+}
+
+.continuation {
+    height: 1024px;
+    text-align: center;
+    color: $cobalt_milky;
+    background: none;
+}

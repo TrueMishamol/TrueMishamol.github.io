@@ -1,0 +1,76 @@
+.cards {
+    max-width: $window_max_width + $window_padding*2;
+    @include w800(margin, $margin_between_blocks auto, $margin_between_blocks_vw auto);
+    @include w600(padding, 0 $window_padding/2, 0); //Делим на 2, Потомучто другая половина в element
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    color: $cobalt;
+    
+    &__element {
+        flex-basis: 50%;
+        flex-grow: 0;
+        padding: 0 $window_padding/2;
+        @include w600(margin-bottom, 20px, 4vw);
+        @media screen and (min-width: 1000px) {
+            &:last-child, &:nth-last-child(2){
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            flex-basis: 100%;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+    &__card {
+        background-color: $cobalt_milky;
+        @include w800(padding, 30px 0 40px, 6vw 0 5vw);
+        width: 100%;
+        max-width: 100%;
+        height: calc(100% - 60px); //минус высота кнопки
+        @extend %text_fz;
+
+        p {
+            @include w800(padding, 0 $window_padding, 0 $window_padding_vw);
+            @include w800(margin, 20px auto 30px, 3vw auto 4vw);
+        }
+        a {
+            display: inline-block;
+            color: $orichalc;
+            transition: all 0.3s ease;
+            &:hover {
+                transform: scale(102%);
+            }
+        }
+        @media screen and (max-width: 1000px) {
+            height: auto;
+        }
+    }
+    .buttons {
+        @include w800(margin, -15px auto 0, -2vw auto 0);
+    }
+    .title {
+        border-bottom: #1E1E39 solid 2px;
+        width: fit-content;
+        max-width: 100%;
+        // margin: 0 auto 20px;
+        @include w800(margin, 0 auto $margin_between_blocks/2, 0 auto $margin_between_blocks_vw/2);
+        // line-height: $title_fz + 2px;
+        // @media screen and (max-width: 1000px) {
+        //     line-height: $title_fz_vw + 0.2vw;
+        // }
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 45vh;
+        object-fit: cover;
+        width: 100%;
+    }    
+}
