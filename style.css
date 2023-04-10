@@ -703,23 +703,25 @@ html, body {
 }
 
 .project {
+  margin: 40px auto;
+  max-width: 1024px;
+}
+.project .project__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0px 20px;
-  max-width: 1024px;
-  margin: 0 auto;
+  padding: 0 20px;
 }
-.project p {
+.project .project__top p {
   font-style: italic;
   font-weight: 400;
   color: #FF953C;
   padding-bottom: 20px;
 }
-.project div {
+.project div.project__content {
   margin: auto auto auto auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,7 +732,7 @@ html, body {
   list-style: none;
   padding: 0px 20px;
 }
-.project div.image {
+.project div.project__content.project__image {
   max-width: 34%;
   padding: 0px 0px;
 }

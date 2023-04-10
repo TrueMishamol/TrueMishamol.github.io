@@ -1,26 +1,33 @@
 .project {
-    display: flex;
-    justify-content: center;
-    padding: 0px 20px;
+
+    margin: $margin_between_blocks auto;
     max-width: 1024px;
-    margin: 0 auto;
-    p {
-        font-style: italic;
-        font-weight: 400;
-        color: $orichalc;
-        padding-bottom: 20px;
+
+    .project__top {
+        display: flex;
+        justify-content: center;
+        padding: 0 20px;
+
+        p {
+            font-style: italic;
+            font-weight: 400;
+            color: $orichalc;
+            padding-bottom: 20px;
+        }
     }
-    div {
+
+    div.project__content {
         margin: auto auto auto auto;
         display: flex;
         align-items: center;
         list-style: none;
         padding: 0px 20px;
-        &.image {
+        &.project__image {
             max-width: 34%;
             padding: 0px 0px;
         }
     }
+
     img {
         max-height: 100%;
         max-width: 100%;
