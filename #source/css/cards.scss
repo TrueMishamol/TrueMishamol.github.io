@@ -25,8 +25,8 @@
                 margin-bottom: 0;
             }
         }
-
     }
+
     &__card {
         background-color: $cobalt_milky;
         @include w800(padding, 30px 0 40px, 6vw 0 5vw);
@@ -51,9 +51,11 @@
             height: auto;
         }
     }
+
     .buttons {
         @include w800(margin, -15px auto 0, -2vw auto 0);
     }
+    
     .title {
         border-bottom: #1E1E39 solid 2px;
         width: fit-content;
