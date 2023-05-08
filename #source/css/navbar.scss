@@ -1,55 +1,32 @@
+$navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
 
 .navbar {
     background: $orichalc;
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // position: sticky;
-    @include w600(position, sticky, relative);
-    @include h800(position, sticky, relative);
     top: 0;
     z-index: 1;
     overflow: visible;
     font-style: normal;
     font-weight: 700;
     color: $cobalt;
-    @extend %text_fz;
     user-select: none;
 
-    &__burger {
-        display: none;
-    }
-
-    @media screen and (max-width: 600px) {
-        // &__m {
-        //     display: none;
-        // }
-        // &__burger {
-        //     display: block;
-        //     &:hover + .navbar__content {
-        //         display: block;
-        //         background: none;
-        //     }
-        // }
-        // position: fixed;
-        top: 0;
-        width: 100%;
+    position: sticky;
+    height: 50px;
+    @media screen and (max-width: $navbar-width) {
+        position: relative;
         height: fit-content;
+
+        width: 100%;
         text-align: center;
-        // display: none;
-        // display: block;
-
         flex-direction: column;
-
-        .navbar__content {
-            flex-direction: column;
-            // display: none;
-        }
-        &__pages {
-            flex-direction: column;
-        }
     }
+
+    @extend %text_fz;
+
+    @include h800(position, sticky, relative);
 
     &__content{
         display: flex;
@@ -57,34 +34,39 @@
         margin: 0 auto;
         width: 100%;
         max-width: $window_max_width;
+
         img {
             &:hover {
                 background: $cobalt_milky;
                 transition: all 0.3s ease;
             }
         }
+
+        @media screen and (max-width: $navbar-width){
+            flex-direction: column;
+        }
+        
     }
+
     &__group {
         display: flex;
         justify-content: center;
     }
+
     //Первый уровень
     &__pages { 
         display: flex;
         justify-content: center;
         padding: 0 20px;
-        // width: 100%;
+        
         > li {
             display:block;
             padding: 12px 20px;
+
             //Второй уровень
             > ul { 
                 position: absolute;
-                // margin: auto;
-                // right: 50%;
-                // right: 0;
                 display: none;
-                // min-width: 200px;
                 > li a {
                     padding: 12px 20px;
                 }
@@ -94,6 +76,7 @@
                 display: block;
             }
         }
+
         a {
             display:block;
             background: $orichalc;
@@ -104,7 +87,12 @@
                 transition: all 0.3s ease;
             }
         }
+
+        @media screen and (max-width: $navbar-width) {
+            flex-direction: column;
+        }
     }
+
     img {
         align-items: center;
         display: flex;

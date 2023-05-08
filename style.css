@@ -528,7 +528,6 @@ html, body {
 
 .navbar {
   background: #FF953C;
-  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,8 +537,6 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: sticky;
-  position: sticky;
   top: 0;
   z-index: 1;
   overflow: visible;
@@ -550,44 +547,27 @@ html, body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  position: sticky;
+  height: 50px;
+  position: sticky;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 645px) {
   .navbar {
     position: relative;
-  }
-}
-@media screen and (max-height: 800px) {
-  .navbar {
-    position: relative;
-  }
-}
-.navbar__burger {
-  display: none;
-}
-@media screen and (max-width: 600px) {
-  .navbar {
-    top: 0;
-    width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 100%;
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .navbar .navbar__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .navbar__pages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+}
+@media screen and (max-height: 800px) {
+  .navbar {
+    position: relative;
   }
 }
 .navbar__content {
@@ -605,6 +585,14 @@ html, body {
   background: #E8E8EB;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 645px) {
+  .navbar__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .navbar__group {
   display: -webkit-box;
@@ -649,6 +637,14 @@ html, body {
   color: #E8E8EB;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+@media screen and (max-width: 645px) {
+  .navbar__pages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .navbar img {
   -webkit-box-align: center;
