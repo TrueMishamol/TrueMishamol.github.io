@@ -2,9 +2,8 @@
     position: relative;
     h1 {
         position: absolute;
-        @include w800(font-size, 70px, 10vw);
+        @include adaptive-max-width($adaptive_max_width_px, font-size, 70px, 10vw);
         overflow: hidden;
-        // @include w800(line-height, 70px, 80vw);
         color: $invisible;
         display: block;
         height: 100%;
@@ -13,10 +12,10 @@
     }
     img {
         display: block;
-        @include w800 (height, 70px, 20vw);
+        @include adaptive-max-width($adaptive_max_width_px, height, 70px, 20vw);
         width: 100%;
-        max-width: $window_max_width;
-        @include w800 (padding, 0 $window_padding, 0 $window_padding_vw);
-        @include w800(margin, $window_padding auto, $window_padding_vw auto);
+        max-width: $page_content_max_width;
+        @include adaptive-max-width($adaptive_max_width_px, padding, 0 $padding_inside_screen_borders_px, 0 $padding_inside_screen_borders_vw);
+        @include adaptive-max-width($adaptive_max_width_px, margin, $padding_inside_screen_borders_px auto, $padding_inside_screen_borders_vw auto);
     }
 }

@@ -14,6 +14,14 @@ $navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
     user-select: none;
 
     position: sticky;
+
+    @media screen and (max-width: $navbar-width) {
+        position: relative;
+    }
+    @media screen and (max-height: 800px) {
+        position: relative;
+    }
+
     height: 50px;
     @media screen and (max-width: $navbar-width) {
         position: relative;
@@ -26,14 +34,12 @@ $navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
 
     @extend %text_fz;
 
-    @include h800(position, sticky, relative);
-
     &__content{
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
         width: 100%;
-        max-width: $window_max_width;
+        max-width: $page_content_max_width;
 
         img {
             &:hover {
@@ -97,8 +103,8 @@ $navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
         align-items: center;
         display: flex;
         flex-direction: column; /* по всей высоте */
-        @include w600(width, 50px, 10vw);
-        @include w600(height, 50px, 10vw);
+        @include adaptive-max-width(600px, width, 50px, 10vw);
+        @include adaptive-max-width(600px, height, 50px, 10vw);
         padding: 0.6rem;
     }
 }

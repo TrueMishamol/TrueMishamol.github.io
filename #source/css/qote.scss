@@ -1,24 +1,25 @@
 .qote {
     $gap: 30px;
     $gap_vw: 4vw;
-    // gap: 40px;
     display: flex;
     justify-content: center;
     background: $cobalt_milky;
     font-style: italic;
     font-weight: 400;
     color: $cobalt;
-    @include w800(padding, 45px - $gap $window_padding - $gap 60px - $gap, calc(7vw - $gap_vw) calc($window_padding_vw - $gap_vw) calc(10vw - $gap_vw));
+    @include adaptive-max-width($adaptive_max_width_px, padding, 45px - $gap $padding_inside_screen_borders_px - $gap 60px - $gap, calc(7vw - $gap_vw) calc($padding_inside_screen_borders_vw - $gap_vw) calc(10vw - $gap_vw));
     @extend %margin-block;
-    max-width: $window_max_width;
+    max-width: $page_content_max_width;
+
     @media screen and (max-width: 800px) {
         flex-wrap: wrap;
         img {
             max-height: 45vh;
         }
     }
+
     &>* {
-        @include w800(padding, $gap, $gap_vw);
+        @include adaptive-max-width($adaptive_max_width_px, padding, $gap, $gap_vw);
         max-height: 100%;
         margin: auto;
         display: flex;
@@ -28,27 +29,31 @@
         min-width: 35%;
         flex-direction: column;
     }
+
     &>.title {
         flex-basis: 100%;
     }
+
     &>div {
         .title {
-            @include w800(margin-bottom, $margin_between_blocks/2, $margin_between_blocks_vw/2);
-            @include w800(margin-top, $margin_between_blocks/2, $margin_between_blocks_vw/2);
+            @include adaptive-max-width($adaptive_max_width_px, margin-bottom, $margin_between_blocks_px/2, $margin_between_blocks_vw/2);
+            @include adaptive-max-width($adaptive_max_width_px, margin-top, $margin_between_blocks_px/2, $margin_between_blocks_vw/2);
             &:first-child {
-                @include w800(margin-top, -10px, -2vw)
+                @include adaptive-max-width($adaptive_max_width_px, margin-top, -10px, -2vw)
             }
         }
         >* {
             width: 100%;
         }
     }
+
     p {
         display: block;
         max-width: 100%;
         margin: auto;
         height: fit-content;
     }
+
     a {
         color: $orichalc;
         display: inline-block;
@@ -57,16 +62,17 @@
             transform: scale(102%);
         }
     }
+
     &__small {
         max-width: 35%;
         min-width: 20%;
     }
+
     &_void {
         background: none;
         color: $orichalc;
-        // padding: 0 $window_padding 0;
-        // padding-bottom: 0;
     }
+    
     &__video {
         width: 100%;
         padding: 0;
@@ -85,7 +91,7 @@
             width: 100%;
         }
         &_fav {
-            @include w800(outline, $orichalc solid 10px, $orichalc solid 2vw)
+            @include adaptive-max-width($adaptive_max_width_px, outline, $orichalc solid 10px, $orichalc solid 2vw)
         }
     }
 }

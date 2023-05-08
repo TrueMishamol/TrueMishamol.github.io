@@ -5,13 +5,12 @@
     &_block {
         @extend %margin-block;
         padding: 0;
-        // max-width: $window_max_width;
-        max-width: $window_max_width + 230px;
+        max-width: $page_content_max_width + 230px;
         .slider__container > img {
             max-height: 90vh;
         }
         .slider__window {
-            max-width: $window_max_width; // Уник
+            max-width: $page_content_max_width; // Уник
             margin: auto; // Уник
         }
     }
@@ -66,11 +65,11 @@
         }
         &_next {
             float: right;
-            @include w800(right, 20px, 3vw);
+            @include adaptive-max-width($adaptive_max_width_px, right, 20px, 3vw);
         }
         &_prev {
             float: left;
-            @include w800(left, 20px, 3vw);
+            @include adaptive-max-width($adaptive_max_width_px, left, 20px, 3vw);
         }
     }
 }

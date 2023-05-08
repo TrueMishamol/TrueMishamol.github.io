@@ -549,7 +549,16 @@ html, body {
           user-select: none;
   position: sticky;
   height: 50px;
-  position: sticky;
+}
+@media screen and (max-width: 645px) {
+  .navbar {
+    position: relative;
+  }
+}
+@media screen and (max-height: 800px) {
+  .navbar {
+    position: relative;
+  }
 }
 @media screen and (max-width: 645px) {
   .navbar {
@@ -563,11 +572,6 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-@media screen and (max-height: 800px) {
-  .navbar {
-    position: relative;
   }
 }
 .navbar__content {
