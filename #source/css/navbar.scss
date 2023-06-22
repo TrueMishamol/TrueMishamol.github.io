@@ -34,6 +34,13 @@ $navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
 
     @extend %text_fz;
 
+    img {
+        &:hover {
+            background: $cobalt_milky;
+            transition: all 0.3s ease;
+        }
+    }
+
     &__content{
         display: flex;
         justify-content: space-between;
@@ -41,17 +48,9 @@ $navbar-width: 645px; //Smaller width - reconstructs nawbar to "burger"
         width: 100%;
         max-width: $page_content_max_width;
 
-        img {
-            &:hover {
-                background: $cobalt_milky;
-                transition: all 0.3s ease;
-            }
-        }
-
         @media screen and (max-width: $navbar-width){
             flex-direction: column;
-        }
-        
+        } 
     }
 
     &__group {

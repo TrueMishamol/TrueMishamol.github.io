@@ -574,6 +574,11 @@ html, body {
             flex-direction: column;
   }
 }
+.navbar img:hover {
+  background: #E8E8EB;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .navbar__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,11 +589,6 @@ html, body {
   margin: 0 auto;
   width: 100%;
   max-width: 1240px;
-}
-.navbar__content img:hover {
-  background: #E8E8EB;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 @media screen and (max-width: 645px) {
   .navbar__content {
