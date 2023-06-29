@@ -437,23 +437,23 @@ html, body {
 
 @-webkit-keyframes scroll {
   0% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
   }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
 }
 
 @keyframes scroll {
   0% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
   }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
   }
 }
 .marquee {
@@ -468,22 +468,25 @@ html, body {
   text-align: right;
   color: #FF953C;
 }
-.marquee p {
+.marquee__group, .marquee__duplicate {
   display: inline-block;
   -webkit-animation: scroll 60s infinite linear;
           animation: scroll 60s infinite linear;
-  padding-left: 100%;
 }
-.marquee p a::after {
+.marquee__group a, .marquee__duplicate a {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.marquee__group a::after, .marquee__duplicate a::after {
   padding: 0 30px;
   content: "|";
 }
 @media screen and (max-width: 800px) {
-  .marquee p a::after {
+  .marquee__group a::after, .marquee__duplicate a::after {
     padding: 0 4vw;
   }
 }
-
 .mishamol-title {
   position: relative;
 }

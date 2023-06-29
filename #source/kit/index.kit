@@ -13,7 +13,7 @@
 
     <!-- SEO tags -->
     <meta name="description" content="Кто такой Мишамол? Главная страница. Создание сайтов, Комиксы, Майнкрафт, Мыловарение">
-    <meta name="keywords" content="Мишамол, Mishamol, Михаил Молодоженов, Михаил Молодожёнов, Миша Молодоженов, Разработка сайтов, Сделать сайт, Создание сайтов, Вёрстка, Дизайн, Комиксы, Майнкрафт, Мыловарение, Mystic World, Bed Edition, Unstoppable Survival"> <!-- Не больще 20 -->
+    <meta name="keywords" content="Мишамол, Mishamol, Михаил Молодоженов, Михаил Молодожёнов, Миша Молодоженов, Разработка сайтов, Сделать сайт, Создание сайтов, Вёрстка, Дизайн, Комиксы, Майнкрафт, Мыловарение, Mystic World, Bed Edition, Unstoppable Survival"> <!-- Не больше 20 -->
     <meta name="Author" content="Mishamol - Михаил Молодожёнов">
     <meta name="Copyright" content="Mishamol - Михаил Молодожёнов">
     
@@ -34,13 +34,19 @@
 </head>
 <body>
 
-    <!-- @import "html/navbar.html" -->
+    <!-- @import "../html/navbar.html" -->
 
     <div class="mishamol-title">
         <h1>Mishamol</h1>
         <img src="/img/navigation/mishamol.svg" alt="Mishamol">
     </div>
     
+    <!--* Проекты -->
+    <div class="header-block">
+        <div class="header-block__line"></div>
+        <h2 class="header">Cherry Roll</h2>
+    </div>
+
     <div class="header-list">
         <a href="https://github.com/TrueMishamol/CherryRoll" target="_blank">
             <img src="/img/navigation/icons/cherry-roll.png">
@@ -55,6 +61,29 @@
     <div class="header-block">
         <div class="header-block__line"></div>
         <h2 class="header">О себе</h2>
+    </div>
+
+    <div class="marquee">
+        <p class="marquee__group">
+            <a href="">Разработчик игр</a>
+            <a href="">Дизайнер</a>
+            <a href="">Unity</a>
+            <a href="">C#</a>
+            <a href="">Gamedev</a>
+            <a href="">3D</a>
+            <a href="">Art</a>
+            <a href="">Design</a>
+        </p>
+        <p class="marquee__duplicate">
+            <a href="">Разработчик игр</a>
+            <a href="">Дизайнер</a>
+            <a href="">Unity</a>
+            <a href="">C#</a>
+            <a href="">Gamedev</a>
+            <a href="">3D</a>
+            <a href="">Art</a>
+            <a href="">Design</a>
+        </p>
     </div>
 
     <!-- Референсы -->
@@ -73,7 +102,17 @@
     <!-- Референсы -->
 
     <div class="marquee">
-        <p>
+        <p class="marquee__group">
+            <a href="">WEB дизайн</a>
+            <a href="">Дизайн интерьеров</a>
+            <a href="">Учёный майнкрафтовских наук</a>
+            <a href="">Иллюстрации</a>
+            <a href="">Комиксы</a>
+            <a href="">Летсплеи</a>
+            <a href="">Авторские игры</a>
+            <a href="">Мыловарение</a>
+        </p>
+        <p class="marquee__duplicate">
             <a href="">WEB дизайн</a>
             <a href="">Дизайн интерьеров</a>
             <a href="">Учёный майнкрафтовских наук</a>
@@ -84,6 +123,7 @@
             <a href="">Мыловарение</a>
         </p>
     </div>
+
     <div class="qote">
         <p>
             Михаил Молодожёнов (aka Мишамол). Дизайнер, программист. Обожаю экспериментировать и воплощать свои идеи в жизнь. Поэтому занимаюсь координально разными вещами. А все мои увлечения нашли точку пересечения в создании игр!
@@ -103,10 +143,16 @@
         </a>
     </div>
 
-    <!--* Истории -->
+    <!--* Коллабы -->
     <div class="header-block">
         <div class="header-block__line"></div>
-        <h2 class="header">Истории</h2>
+        <h2 class="header">Коллабы</h2>
+    </div>
+
+    <div class="qote">
+        <p>
+            Я люблю работать в команде. Организую вокруг себя совместную работу и создаю коллабы. Умею грамотно распределять задачи между людьми, их навыками и интересами, чтобы получить максимум вовлечённости, а так же привнести в проект шарм и уникальный взгляд каждого из участников
+        </p>
     </div>
 
     <!-- Слайдер -->
@@ -115,25 +161,15 @@
             <div class="slider__container">
 
                 <div>
-                    <!-- @import "html/projects/unstoppable_survival.html" -->
+                    <!-- @import "../html/projects/final_chaos.html" -->
                 </div>
 
                 <div>
-                    <h3 class="title title_block"> Финальный Хаос </h3>
-                    <div class="qote qote_void">
-                        <div class="qote__video qote__video_fav">
-                            <div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/WYgGmzpkBPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="buttons">
-                        <a href="colorline/final_chaos" class="buttons">Читать историю ></a>
-                    </div>
+                    <!-- @import "../html/projects/colorline_diary.html" -->
                 </div>
 
                 <div>
-                    <!-- @import "html/projects/colorline_diary.html" -->
+                    <!-- @import "../html/projects/unstoppable_survival.html" -->
                 </div>
 
             </div>
@@ -145,7 +181,13 @@
     </div>
     <!-- Слайдер -->
 
-    <!-- @import "html/story.html" -->
+    <!--* Истории -->
+    <div class="header-block">
+        <div class="header-block__line"></div>
+        <h2 class="header">Истории</h2>
+    </div>
+
+    <!-- @import "../html/story.html" -->
 
     <div class="continuation"> </div>
 
