@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* Zeroing */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Zeroing */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.eot");
+  src: local("☺"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.ttf") format("truetype"), url("../fonts/Gilroy-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.eot");
+  src: local("☺"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.ttf") format("truetype"), url("../fonts/Gilroy-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+.portfolio-block a.image, .about__programlist li > *, .about__programlist, .main-image, .main-info, .navbar ul {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+}
+
+.button, .portfolio-block a, .about p {
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 500px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+p.signature a, .portfolio-block a, .about__programlist li > *:nth-child(2), .main-info__language > .en, .main-info__language > .ru, .navbar ul li a {
+  -webkit-text-decoration: underline rgba(7, 7, 7, 0);
+          text-decoration: underline rgba(7, 7, 7, 0);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+p.signature a:hover, .portfolio-block a:hover, .about__programlist li > :hover:nth-child(2), .main-info__language > .en:hover, .main-info__language > .ru:hover, .navbar ul li a:hover {
+  color: #070707;
+  -webkit-text-decoration: underline rgba(7, 7, 7, 0);
+          text-decoration: underline rgba(7, 7, 7, 0);
+}
+
+.container {
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 18px;
+  color: #070707;
+}
+.container p {
+  line-height: 22px;
+  text-align: center;
+}
+.container h1 {
+  font-weight: 700;
+  font-size: 47px;
+  line-height: 59px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.container h1:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+  font-weight: 700;
+  width: 100%;
+  padding: 0 30px;
+  line-height: 87px;
+}
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #828282;
+}
+.navbar ul li {
+  color: #828282;
+}
+.navbar ul li:first-child {
+  color: #070707;
+}
+.navbar ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main {
+  width: 100%;
+  padding: 40px 30px;
+}
+
+.main-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-info p {
+  text-align: left;
+}
+.main-info > * {
+  margin: auto 0 0;
+  display: inline-block;
+  text-align: left;
+}
+.main-info__language {
+  font-weight: 700;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-orientation: mixed;
+}
+.main-info__language > .ru {
+  color: #828282;
+}
+.main-info__language > .en {
+  color: #070707;
+}
+
+.main-image {
+  display: block;
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 700;
+  padding: 0 30px;
+}
+
+.about {
+  padding: 100px 0 100px;
+}
+.about:nth-child(even) {
+  background: #F6F6F6;
+}
+.about__programlist {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-align: center;
+  color: #828282;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  width: 100%;
+}
+.about__programlist li {
+  margin: 0 30px 0 0;
+  display: inline-block;
+  width: 166px;
+  position: relative;
+}
+.about__programlist li:last-child {
+  margin: 0;
+}
+.about__programlist li > * {
+  display: block;
+}
+.about__programlist li > *:first-child {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.about__programlist li > *:first-child:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.about__programlist li > *:nth-child(2) {
+  display: block;
+  margin: 20px auto 60px;
+  width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.about__programlist li > *:nth-child(2):hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+.about__programlist li .stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  max-width: 166px;
+  position: absolute;
+  bottom: 0;
+}
+.about__programlist li .stars > * {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.about__programlist li .stars > *:hover {
+  -webkit-transform: scale(1.14);
+          transform: scale(1.14);
+}
+
+.portfolio-block {
+  padding: 50px 0 0;
+}
+.portfolio-block > * {
+  margin: 0 auto;
+}
+.portfolio-block a {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 21px;
+  margin: 20px auto 50px;
+}
+.portfolio-block a.image {
+  padding: 0;
+  overflow: hidden;
+}
+.portfolio-block a.image img {
+  width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.portfolio-block a.image img:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.button {
+  display: block;
+}
+.button a {
+  line-height: 42px;
+  border-radius: 21px;
+  background-color: #070707;
+  color: white;
+  display: block;
+  font-weight: 700;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-box-shadow: 0 10px 20px rgba(7, 7, 7, 0.1);
+          box-shadow: 0 10px 20px rgba(7, 7, 7, 0.1);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.button a:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+.contacts-icons {
+  width: 100%;
+  margin: 100px 0 0 0;
+}
+.contacts-icons ul {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 342px;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 60px;
+      -ms-flex-positive: 60px;
+          flex-grow: 60px;
+}
+.contacts-icons ul li {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.contacts-icons ul li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+p.signature {
+  padding: 60px 0 0 0;
+  margin: auto;
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+}
+p.signature a {
+  padding: 0 0 20px 0;
+  display: block;
+}
+p.signature a:last-child {
+  padding: 0;
+}

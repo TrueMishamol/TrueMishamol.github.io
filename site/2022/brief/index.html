@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishamol</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="block">
+        <h1 class="header">Бриф</h1>
+        <p class="text">Бриф это такой же важный этап работы, как и все остальные, поэтому уделите ему достаточно времени и заполняйте обдуманно.</p>
+        <p class="text">Бриф обязательно должен заполнять тот человек, для которого делается сайт, кто будет принимать окончательное решение и кто отлично знает целевую аудиторию.</p>
+    </div>
+
+    <form class="brief" action="#" method="post" enctype="multipart/form-data">
+        
+        <h2 class="header">Контактные данные</h2>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Контактное лицо</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">ФИО</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Телефон</p>
+                <input type="tel" name="user-phone">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">E-mail</p>
+                <input type="text" name="user-email">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Аккаунт в соцсети</p>
+                <input type="text" name="user-contact">
+            </div>
+        </div>
+
+        <!-- <div class="brief__block">
+            <div>
+                <h3 class="title">Тариф</h3>
+            </div>
+            <p class="text">Стандартный тариф на разработку лендинга!</p>
+            <p class="text">Вы можете уточнить у меня о том какие акции сейчас действуют.</p>
+        </div> -->
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Откуда вы узнали обо мне</h3>
+            </div>
+            <div class="brief__field">
+                <!-- <p class="inscription">Откуда вы узнали обо мне</p> -->
+                <textarea name="how-did-you-know-about-me"></textarea>
+            </div>
+        </div>
+
+        <h2 class="header">О компании</h2>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Общие сведения</h3>
+                <h4 class="subtitle">которые необходимо указать на сайте</h4>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Название компании</p>
+                <input type="text" name="company-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Телефон</p>
+                <input type="tel" name="company-phone">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">E-mail</p>
+                <input type="text" name="company-email">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Адрес</p>
+                <input type="text" name="company-address">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Геопозиция</p>
+                <p class="notes">В каких регионах / странах Вы работаете?</p>
+                <input type="text" name="company-location">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Часы работы</p>
+                <input type="text" name="company-time">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Логотип</p>
+                <div class="brief__input-file">
+                    <div class="brief__input-file-border"><div></div></div>
+                    <img src="./img/icons/Upload.svg" alt="Загрузите файл сюда">
+                    <input type="file" name="company-logo">
+                </div>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Прочие сведения</p>
+                <textarea name="company-text"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">E-mail для заявок</p>
+                <p class="notes">не размещается на сайте, туда вам просто будут приходить заявки с сайта</p>
+                <input type="text" name="company-request-email">
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Ассортимент</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Список товаров / услуг</p>
+                <textarea name="product-list"></textarea>
+            </div>
+        </div>
+
+        <h2 class="header">Цели разработки сайта</h2>
+
+        <div class="brief__block">
+            <!-- <div>
+                <h3 class="title">Цели разработки сайта</h3>
+            </div> -->
+            <div class="brief__field">
+                <p class="inscription">Какие вы преследуете цели от сайта?</p>
+                <p class="notes">Повысить продажи / показать информацию о товаре</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Объект рекламы</p>
+                <p class="notes">Товар / услуга / сама компания. На что направлен сайт? Опишите объект рекламы</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">На какую особенность товара мы акцентируем внимание?</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Как клиенты будут попадать на сайт</p>
+                <p class="notes">SEO, контекстная реклама, звонки, печатная продукция</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+        
+        <h2 class="header">Клиент</h2>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Ваш основной клиент</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Возраст</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Место проживания</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Интересы</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Доход</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Прочие сведения</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Как заинтересовать?</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Какие проблемы клиента Вы решаете?</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Какие сомнения клиента нужно преодолеть, чтобы он совершил покупку?</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <h2 class="header">Конкуренты</h2>
+
+        <div class="brief__block">
+            <div class="brief__field">
+                <p class="inscription">Сайты Ваших основных конкурентов</p>
+                <p class="notes">2-3 ссылки на сайт</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Сильные стороны конкурентов</p>
+                <p class="notes">В чём их услуги / товары лучше Ваших?</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Какие недостатки у Вас есть по сравнению с конкурентами, и как их надо скрыть</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Слабые стороны конкурентов</p>
+                <p class="notes">На каких слабых сторонах клиентов можно сыграть?</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Какие у Вас преимущества и как их правильно показать?</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <h2 class="header">Дизайн</h2>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Цветовая гамма сайта</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Цвета использовать</p>
+                <p class="notes">Сайт тёмный / светлый / яркий / спокойный / строгий</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Цвета нежелательно использовать</p>
+                <input type="text" name="user-name">
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Детали</h3>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Что категорически вы не хотите видеть в дизайне</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Особое требование или пожелание по дизайну</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Примеры</h3>
+                <h4 class="subtitle">чужих или моих работ (с комментариями)</h4>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Нравятся</p>
+                <p class="notes">Примеры сайтов, дизайн которых Вам понравился</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Не нравятся</p>
+                <p class="notes">Пример сайтов, дизайн которых Вам не нравится</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Слова, которые могут характеризовать дизайн будущего сайта</h3>
+            </div>
+            <div class="brief__field brief__field_fit">
+                <input id="1" type="checkbox" value="yes" name="mark-expensive">
+                <label for="1" class="checkbox">Дорогой</label>
+                <input id="2" type="checkbox" value="yes" name="mark-minimalist">
+                <label for="2" class="checkbox">Минималистичный</label>
+                <input id="3" type="checkbox" value="yes" name="mark-bright">
+                <label for="3" class="checkbox">Яркий</label>
+                <input id="4" type="checkbox" value="yes" name="mark-modern">
+                <label for="4" class="checkbox">Современный</label>
+                <input id="5" type="checkbox" value="yes" name="mark-aggressive">
+                <label for="5" class="checkbox">Агрессивный</label>
+                <input id="6" type="checkbox" value="yes" name="mark-conservative">
+                <label for="6" class="checkbox">Консервативный</label>
+                <input id="7" type="checkbox" value="yes" name="mark-strict">
+                <label for="7" class="checkbox">Строгий</label>
+                <input id="8" type="checkbox" value="yes" name="mark-soft">
+                <label for="8" class="checkbox">Мягкий, тёплый</label>
+                <input id="9" type="checkbox" value="yes" name="mark-comfortable">
+                <label for="9" class="checkbox">Удобный</label>
+                <input id="10" type="checkbox" value="yes" name="mark-dynamic">
+                <label for="10" class="checkbox">Динамичный</label>
+                <input id="11" type="checkbox" value="yes" name="mark-pictured">
+                <label for="11" class="checkbox">Больше картинок</label>
+                <input id="12" type="checkbox" value="yes" name="mark-texted">
+                <label for="12" class="checkbox">Больше текста</label>
+            </div>
+        </div>
+
+        <h2 class="header">Наполнение</h2>
+
+        <div class="brief__block">
+            <!-- <div>
+                <h3 class="title">Навигационное меню</h3>
+            </div> -->
+            <div class="brief__field">
+                <p class="inscription">Навигационное меню</p>
+                <p class="notes">Какие разделы и блоки будут на сайте</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <div class="brief__block">
+            <div>
+                <h3 class="title">Выберите блоки и укажите их наполнение</h3>
+            </div>
+            <div class="brief__field">
+                <input id="13" type="checkbox" value="yes" name="mark-expensive">
+                <label for="13" class="checkbox">Заголовок</label>
+                <input type="text" name="user-name">
+                <input id="14" type="checkbox" value="yes" name="mark-minimalist">
+                <label for="14" class="checkbox">О компании</label>
+                <textarea name="goal"></textarea>
+                <input id="15" type="checkbox" value="yes" name="mark-bright">
+                <label for="15" class="checkbox">Преимущества</label>
+                <textarea name="goal"></textarea>
+                <input id="16" type="checkbox" value="yes" name="mark-modern">
+                <label for="16" class="checkbox">Наши работы</label>
+                <textarea name="goal"></textarea>
+                <input id="17" type="checkbox" value="yes" name="mark-aggressive">
+                <label for="17" class="checkbox">Акция</label>
+                <textarea name="goal"></textarea>
+                <input id="18" type="checkbox" value="yes" name="mark-conservative">
+                <label for="18" class="checkbox">Гарантия</label>
+                <textarea name="goal"></textarea>
+                <input id="19" type="checkbox" value="yes" name="mark-strict">
+                <label for="19" class="checkbox">Доставка и оплата</label>
+                <textarea name="goal"></textarea>
+                <input id="20" type="checkbox" value="yes" name="mark-soft">
+                <label for="20" class="checkbox">Кейсы</label>
+                <textarea name="goal"></textarea>
+                <input id="21" type="checkbox" value="yes" name="mark-comfortable">
+                <label for="21" class="checkbox">Каталог / услуги</label>
+                <textarea name="goal"></textarea>
+                <input id="22" type="checkbox" value="yes" name="mark-dynamic">
+                <label for="22" class="checkbox">Отзывы</label>
+                <textarea name="goal"></textarea>
+                <input id="23" type="checkbox" value="yes" name="mark-pictured">
+                <label for="23" class="checkbox">Схема работы</label>
+                <textarea name="goal"></textarea>
+                <input id="24" type="checkbox" value="yes" name="mark-texted">
+                <label for="24" class="checkbox">Контакты</label>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Другие блоки</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Форма обратной связи</p>
+                <p class="notes">Какие поля необходимо разместить в форме заказа / заявке</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+
+        <h2 class="header">Копирайтинг</h2>
+
+        <div class="brief__block">
+            <!-- <div>
+                <h3 class="title">Стиль подачи текста</h3>
+            </div> -->
+            <div class="brief__field">
+                <p class="inscription">Стиль подачи текста</p>
+                <p class="notes">Деловой / юмористический / провокационный / дружелюбный / упрощённый</p>
+                <input type="text" name="user-name">
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Примерный объём материала по разделам</p>
+                <p class="notes">Примерно укажите в процентах</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Что обязательно должно быть отражено в материале</p>
+                <textarea name="goal"></textarea>
+            </div>
+            <div class="brief__field">
+                <p class="inscription">Примеры текстов, которые Вам нравятся</p>
+                <p class="notes">Есть ли сайты и статьи, которые можно взять как пример грамотного исполнения</p>
+                <textarea name="goal"></textarea>
+            </div>
+        </div>
+        <button type="submit" class="button button_main"> Отправить </button>
+        <button type="submit" class="button"> Сохранить себе </button>
+    </form>
+
+</body>
+</html>

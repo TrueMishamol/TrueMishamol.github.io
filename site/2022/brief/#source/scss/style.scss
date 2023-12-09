@@ -1,0 +1,238 @@
+@import "zeroing.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+// Animated dashed border
+@keyframes border-dance {
+    0% {
+        background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+    }
+    100% {
+        background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+    }
+}
+
+$orichalc: #FFA471;
+$orichalc_unselected: #F7BB89;
+$cobalt_text: #3A3A68;
+$cobalt_subtext: #7E7EB8;
+$cobalt_unselected: #D1D1E4;
+$cobalt_field: #E8ECF4;
+$invisible: rgba(7, 7, 7, 0);
+
+$header_fz: 40px;
+$title_fz: 30px;
+$text_fz: 20px;
+$notes_fz: 14px;
+
+$transition: all ease 0.3s;
+
+$window_padding: 30px;
+$window_max_width: 700px;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: $cobalt_text;
+    font-size: 20px;
+}
+
+.header {
+    color: $orichalc;
+    font-size: $header_fz;
+    font-weight: 700;
+    text-align: center;
+}
+.title {
+    font-size: $title_fz;
+    text-align: center;
+}
+.subtitle {
+    color: $cobalt_subtext;
+    font-style: italic;
+    text-align: center;
+}
+.inscription {
+    font-style: italic;
+}
+.notes {
+    font-size: $notes_fz;
+    color: $cobalt_subtext;
+}
+
+.block {
+    margin: 0 auto;
+    padding: 0 $window_padding;
+    max-width: $window_max_width + $window_padding * 2;
+    .header{
+        margin: 50px auto 30px;
+    }
+    .text {
+        max-width: $window_max_width;
+        margin: 30px auto;
+    }
+}
+
+.brief {
+    margin: 30px auto;
+    padding: 0 $window_padding;
+    display: block;
+    max-width: $window_max_width + $window_padding * 2;
+    
+    .text {
+        margin: 0 auto 30px auto;
+    }
+
+    // Расстояние между блоками брифа
+    &__block {
+        margin: 30px 0;
+    }
+    // Расстояние между элементами внутри блоков брифа
+    &__block>*{
+        margin: 12px 0;
+    }
+    // Расстояние от надписи до поля ввода
+    &__field {
+        p:last-of-type {
+            margin-bottom: 2px;
+        }
+        &_fit {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    // Общие настройки для всех полей воода
+    %input {
+        background-color: $cobalt_field;
+        font-size: $text_fz - 2px;
+        color: $cobalt_text;
+        width: 100%;
+        transition: $transition;
+        display: block;
+    }
+    // Однострочные поля ввода
+    input {
+        @extend %input;
+        &[type=text], &[type=tel] {
+            padding: 5px 10px;
+            height: $text_fz + 15px;
+            border-bottom: 2px solid $invisible;
+            &:focus{
+                border-bottom: 2px solid $orichalc;
+            }
+        }
+    }
+    // Многострочные поля ввода
+    textarea {
+        @extend %input;
+        padding: 5px 10px;
+        height: 85px;
+        resize: vertical;
+        max-height: 100vh;
+    }
+
+    // Загрузить файл
+    &__input-file {
+        @extend %input;
+        position: relative;
+        height: 85px;
+        padding: 0;
+        // Чувствительное на нажатие поле
+        input[type=file] {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+        }
+        // Рамка
+        &-border {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top:0;
+            padding: 10px;
+            div {
+                // border: dashed white 2px;
+                height: 100%;
+                width: 100%;
+                // Animated dashed border
+                background: linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(0deg, white 50%, transparent 50%), linear-gradient(0deg, white 50%, transparent 50%);
+                background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+                background-size: 10px 2px, 10px 2px, 2px 10px, 2px 10px;
+                animation: border-dance 20s infinite linear;
+            }
+        }
+        img {
+            display: block;
+            margin: auto;
+            height: 100%;
+            width: 55px;
+        }
+    }
+
+    //Checkbox
+    input[type=checkbox] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        width: 0;
+        &+.checkbox {
+            display: block;
+            font-style: italic;
+            margin: 4px 0 10px 0; // этот margin непсредственно связан
+            &::before {
+                content: '';
+                display: inline-block;
+                height: 22px;
+                width: 22px;
+                border: 2px $cobalt_field solid;
+                margin: 3px 10px -3px 0; // с этим
+                transition: $transition;
+            }
+        }
+        &:not(:checked)+.checkbox {
+            &+textarea,&+input[type=text] {
+                height: 0;
+                max-height: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin: -3px 0 0 0;
+                border: none;
+            }
+        }
+        &:checked+.checkbox::before {
+            border: 2px $orichalc solid;
+            background-image: url("../img/icons/Checked.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    button {
+        width: 350px;
+        margin: 12px auto;
+    }
+}
+
+.button {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    display: block;
+    font-size: $text_fz;
+    transition: $transition;
+    background-color: $cobalt_unselected;
+    &:hover {
+        background-color: $cobalt_subtext;
+    }
+    &_main {
+        background-color: $orichalc_unselected;
+        &:hover {
+            background-color: $orichalc;
+        }
+    }
+}

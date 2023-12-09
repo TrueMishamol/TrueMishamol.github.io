@@ -1,0 +1,283 @@
+/* Zeroing */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Zeroing */
+@-webkit-keyframes border-dance {
+  0% {
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+  }
+  100% {
+    background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+  }
+}
+@keyframes border-dance {
+  0% {
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+  }
+  100% {
+    background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  color: #3A3A68;
+  font-size: 20px;
+}
+
+.header {
+  color: #FFA471;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #7E7EB8;
+  font-style: italic;
+  text-align: center;
+}
+
+.inscription {
+  font-style: italic;
+}
+
+.notes {
+  font-size: 14px;
+  color: #7E7EB8;
+}
+
+.block {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 760px;
+}
+.block .header {
+  margin: 50px auto 30px;
+}
+.block .text {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.brief {
+  margin: 30px auto;
+  padding: 0 30px;
+  display: block;
+  max-width: 760px;
+}
+.brief .text {
+  margin: 0 auto 30px auto;
+}
+.brief__block {
+  margin: 30px 0;
+}
+.brief__block > * {
+  margin: 12px 0;
+}
+.brief__field p:last-of-type {
+  margin-bottom: 2px;
+}
+.brief__field_fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brief .brief__input-file, .brief textarea, .brief input {
+  background-color: #E8ECF4;
+  font-size: 18px;
+  color: #3A3A68;
+  width: 100%;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  display: block;
+}
+.brief input[type=text], .brief input[type=tel] {
+  padding: 5px 10px;
+  height: 35px;
+  border-bottom: 2px solid rgba(7, 7, 7, 0);
+}
+.brief input[type=text]:focus, .brief input[type=tel]:focus {
+  border-bottom: 2px solid #FFA471;
+}
+.brief textarea {
+  padding: 5px 10px;
+  height: 85px;
+  resize: vertical;
+  max-height: 100vh;
+}
+.brief__input-file {
+  position: relative;
+  height: 85px;
+  padding: 0;
+}
+.brief__input-file input[type=file] {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.brief__input-file-border {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  padding: 10px;
+}
+.brief__input-file-border div {
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, transparent)), -webkit-gradient(linear, left top, right top, color-stop(50%, white), color-stop(50%, transparent)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, transparent)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, white), color-stop(50%, transparent));
+  background: linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(0deg, white 50%, transparent 50%), linear-gradient(0deg, white 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 10px 2px, 10px 2px, 2px 10px, 2px 10px;
+  -webkit-animation: border-dance 20s infinite linear;
+          animation: border-dance 20s infinite linear;
+}
+.brief__input-file img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: 55px;
+}
+.brief input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 0;
+}
+.brief input[type=checkbox] + .checkbox {
+  display: block;
+  font-style: italic;
+  margin: 4px 0 10px 0;
+}
+.brief input[type=checkbox] + .checkbox::before {
+  content: "";
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  border: 2px #E8ECF4 solid;
+  margin: 3px 10px -3px 0;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.brief input[type=checkbox]:not(:checked) + .checkbox + textarea, .brief input[type=checkbox]:not(:checked) + .checkbox + input[type=text] {
+  height: 0;
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: -3px 0 0 0;
+  border: none;
+}
+.brief input[type=checkbox]:checked + .checkbox::before {
+  border: 2px #FFA471 solid;
+  background-image: url("../img/icons/Checked.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.brief button {
+  width: 350px;
+  margin: 12px auto;
+}
+
+.button {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  font-size: 20px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  background-color: #D1D1E4;
+}
+.button:hover {
+  background-color: #7E7EB8;
+}
+.button_main {
+  background-color: #F7BB89;
+}
+.button_main:hover {
+  background-color: #FFA471;
+}

@@ -1,0 +1,318 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #979692;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  text-align: justify;
+}
+
+.nav-m-ghost {
+  width: 70px;
+  height: 70px;
+  padding: 1rem;
+  position: fixed;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 30%;
+  z-index: 1;
+  /*filter: invert(200%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(100%);*/
+}
+
+.nav-m-ghost:hover {
+  width: 100px;
+  height: 100px;
+  padding: 1rem;
+  opacity: 80%;
+}
+
+.container h1 {
+  font-size: 6.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  overflow: hidden;
+  /*Скрыть вышедшие за экран картинки*/
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.top-picture {
+  background-size: 100%;
+  background-color: transparent;
+  background-position-y: top;
+  background-attachment: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-picture h1 {
+  padding: 30vh 0 40px;
+  font-size: 10vw;
+  max-width: 100%;
+}
+
+.top-picture ul {
+  margin: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(#979692));
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #979692 100%);
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.continuation {
+  height: 1400px;
+}
+
+.navbar {
+  background: #979692;
+}
+
+.navbar a {
+  background: #979692;
+}
+
+.navbar a:hover {
+  color: #E8E8EB;
+}
+
+.navbar img:hover {
+  background: #E8E8EB;
+}
+
+.qote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  font-style: normal;
+  font-weight: 400;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.qote p {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.qote a {
+  color: white;
+  opacity: 60%;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-text-decoration: #ECB133;
+          text-decoration: #ECB133;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.qote a:hover {
+  color: white;
+  opacity: 100%;
+}
+
+.qote div {
+  max-width: 1400px;
+  margin: auto auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.qote img {
+  max-height: 60%;
+  max-width: 60%;
+  min-height: 60%;
+  min-width: 60%;
+}
+
+.button {
+  max-width: 1400px;
+  position: relative;
+  margin: 0 auto;
+  bottom: 30px;
+  text-align: center;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+  /* убирать подчёркивание у ссылок */
+  background: #56554C;
+  padding: 1.3em 2em;
+  outline: none;
+  /* убирать контур в Mozilla */
+  margin: auto 1em 1em auto;
+  float: right;
+}
+
+.button a:hover {
+  background: #ECB133;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.img-panorame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.showcase {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.showcase img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.slider {
+  /*background-color: #56554C;*/
+  max-width: 1400px;
+  width: 100%;
+  margin: auto auto;
+  overflow: hidden;
+  max-height: auto;
+  height: auto;
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: auto;
+  height: auto;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.slider-container img {
+  width: 100%;
+  min-width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  max-height: auto;
+  margin: auto;
+}
+
+.slider-button img {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  height: 10vw;
+  display: block;
+  position: relative;
+  padding: 0px;
+  margin: 0;
+  -webkit-filter: invert(90%) sepia(77%) saturate(0%) hue-rotate(349deg) brightness(99%) contrast(87%);
+          filter: invert(90%) sepia(77%) saturate(0%) hue-rotate(349deg) brightness(99%) contrast(87%);
+}
+
+.slider-button .slider-next {
+  float: right;
+  right: 20px;
+}
+
+.slider-button .slider-prev {
+  float: left;
+  left: 20px;
+}
+
+.slider-button img:hover {
+  -webkit-filter: invert(69%) sepia(77%) saturate(475%) hue-rotate(349deg) brightness(99%) contrast(87%);
+          filter: invert(69%) sepia(77%) saturate(475%) hue-rotate(349deg) brightness(99%) contrast(87%);
+}
+
+@media screen and (max-width: 874px) {
+  .qote {
+    float: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .qote div {
+    float: none;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .qote img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+  }
+
+  .container h1 {
+    font-size: 10vw;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container h1 {
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
+  }
+
+  body {
+    font-size: 0.7rem;
+  }
+}

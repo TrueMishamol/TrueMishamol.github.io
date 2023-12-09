@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #eceaed;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    color: #69ab54;
+    text-align: justify;
+}
+
+.container h1 {
+    font-size: 2.8rem;
+    color: #69ab54;
+    letter-spacing: 0.9rem;
+    text-align: center;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    overflow: hidden; /*Скрыть вышедшие за экран картинки*/
+}
+
+.top-picture {
+    text-align: center;
+    background-size: 100%;
+    background-color: transparent;
+    /*background-position: center;*/
+    background-position-y: top;
+    background-attachment: fixed;
+    color: #ffffff;
+    align-items: center;
+    min-height: 256px;
+}
+.top-picture h1 {
+    align-items: center;
+    padding: 90px 0px;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+    padding: rem;
+    color: #ffffff;
+}
+
+.continuation {
+    height: 1024px;
+    text-align: center;
+}
+
+.navbar-thickness {
+    background: #69ab54;
+}
+
+.navbar {
+    background: #69ab54;
+    color: #eceaed;
+}
+.navbar a {
+    background: #69ab54;
+}
+.navbar a:hover {
+    color: #ffffff;
+}
+.navbar img {
+    border-radius: 11px;
+}
+.navbar img:hover {
+    background: #ffffff;
+}
+
+.content {
+    background: #ffffff;
+    font-style: normal;
+    border-radius: 15px;
+}
+
+.content img{
+    border-radius: 15px;
+}
+
+.qote {
+    background: #ffffff;
+    font-style: normal;
+    border-radius: 15px;
+    color: #505050;
+}
+
+.void {
+    background: #eceaed;
+    color: #69ab54;
+}
+.qote a {
+    color: #69ab54;
+    font-style: normal;
+    text-decoration:#69ab54;
+}
+
+.button a {
+    color: #eceaed;
+    background: #69ab54;
+    border-radius: 15px;
+}
+.button a:hover { 
+    color: #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+    .container h1 {
+        font-size: 7vw;
+        letter-spacing: 0.4rem;
+    }
+    body {
+        font-size: 3vw;
+    }
+
+    .navbar img {
+        border-radius: 2px;
+    }
+
+    .content {
+        border-radius: 3px;
+    }
+    
+    .content img{
+        border-radius: 3px;
+    }
+    
+    .qote {
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-style: bold;
+    color: #4B5559;
+    text-align: justify;
+}
+
+.container h1 {
+    font-size: 2.8rem;
+    color: #4B5559;
+    letter-spacing: 0.9rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 20px;
+    overflow: hidden; /*Скрыть вышедшие за экран картинки*/
+}
+
+.navbar-thickness {
+    background: #A5D400;
+    height: 40px;
+}
+
+.navbar {
+    background: #A5D400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    /* sticky делает так что пока элемент не достигнет определённого расстояния от верха он будет двигаться */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    overflow: visible;/*Не Скрыть вышедшие за экран картинки*/
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-style: bold;
+}
+
+.navbar li {
+    display:block;
+}
+
+.navbar a {
+    display:block;
+    background: #A5D400;
+    color: inherit;
+    text-decoration: none;
+    /*float: right;*/
+    height: 50px;
+}
+
+/*Отступы для кнопок с текстом но не для картинок*/
+.navbar a.gap,
+.navbar > ul li ul li a  {
+    padding: 12px 2rem;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.navbar li ul {
+    position: absolute;
+    display: none;
+    min-width: 200px;
+}
+
+/*Под-под пункты*/
+.navbar li > ul li ul {
+    right:-120px;
+    top: -50;
+}
+
+.navbar li:hover > ul {
+    display: block;
+} 
+
+.navbar img {
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Эта штука позволяет растянуть картинку во всей высоте */
+}
+
+.navbar img:hover {
+    background: #E5E5E5;
+    transition: all 0.3s ease;
+}
+
+.content-gap {
+    background: none;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    background: none;
+    font-style: italic;
+    padding: 0px;
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+.content img {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0 auto; 
+    width: 100%;
+}
+
+.qote {
+    display: flex;
+    justify-content: center;
+    background: #E5E5E5;
+    font-style: italic;
+    padding: 50px;
+    margin: 0 auto; /* auto - значит по центру */
+    max-width: 800px;
+}
+
+.void {
+    background: #E5E5E500;
+    color: #4B5559;
+    padding: 25px 50px 50px 50px;
+}
+
+.qote p {
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+.qote a {
+    color: #4B5559;
+    font-style: italic;
+    text-decoration:#4B5559;
+}
+
+.qote div {
+    max-width: 1024px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.qote li {
+    padding: 20px;
+    max-height: 100%;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    float: none;
+    max-width: 100%;
+    min-width: 35%;
+    flex-direction: column;
+}
+
+.qote li img {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    padding: 0px 50px 0px 50px;
+    margin: 0 auto; /* auto - значит по центру */
+    max-width: 800px;
+    color:#4B5559;
+}
+
+.video div {
+    max-width: 1024px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    min-width: 100%;
+}
+
+.video li {
+    max-height: 100%;
+    padding: 20px;
+    margin: auto auto auto auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    float: none;
+    max-width: 100%;
+    min-width: 50%;
+    flex-direction: column;
+}
+
+.video li iframe {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.button {
+    max-width: 1024px;
+    /*height: 70px;*/
+    position: relative;
+    margin: 0 auto;
+    bottom: 7px;
+    /*padding: 10px 0;*/
+    text-align: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.button a {
+    color: #4B5559;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    background: #A5D400;
+    padding: 1.3em 2em;
+    outline: none; /* убирать контур в Mozilla */
+    margin: auto 1em 1em auto;
+    float:right;
+}
+.button a:hover { 
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 874px) {
+    .navbar > ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 682px) {
+
+    .navbar {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+
+        align-items: center;
+        height: 256px;
+        padding: 0rem;
+
+        position: relative;
+        position: -webkit-relative;
+    }
+
+    .navbar ul {
+      padding: 0rem;
+    }
+
+    .navbar a.gap {
+        padding: 0.5rem;
+    }
+
+    .qote div{
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .video {
+        padding: 0px 0px 0px 0px;
+    }
+    .video div{
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .button {
+        display: flex;
+        max-width: 100%;
+        float: none;
+        flex-direction:column-reverse;
+        bottom: 21px;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .navbar {
+        position: relative;
+        position: -webkit-relative;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container h1 {
+        font-size: 2rem;
+        letter-spacing: 0.4rem;
+    }
+    .todo {
+        float: none;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.4rem;
+    }
+    body {
+        font-size: 0.7rem;
+    }
+}
