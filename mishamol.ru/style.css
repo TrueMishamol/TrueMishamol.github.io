@@ -187,7 +187,7 @@ body {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  background-color: aquamarine;
+  background-color: #FF8652;
   border-radius: 50px;
   padding: 22px;
   padding-top: 42px;
@@ -199,8 +199,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.navbar_pages > li > ul > * {
+.navbar_pages > li > ul > li {
+  width: 100%;
   margin: 10px;
+}
+.navbar_pages > li > ul > li > button {
+  width: 100%;
 }
 .navbar_pages > li > button {
   position: relative;
@@ -212,6 +216,19 @@ body {
   display: flex;
   -webkit-transform: translate(-50%, -32px) scale(1);
           transform: translate(-50%, -32px) scale(1);
+}
+.navbar_pages_divider {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+.navbar_pages_title {
+  line-height: 70%;
+  text-align: center;
 }
 .navbar_container {
   display: block;
@@ -247,6 +264,7 @@ body {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  white-space: nowrap;
 }
 .button.active {
   background-color: #292B3E;

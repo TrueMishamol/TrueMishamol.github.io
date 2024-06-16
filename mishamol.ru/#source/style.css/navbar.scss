@@ -14,31 +14,32 @@
 			background-color: transparent;
 			cursor: pointer;
 			transition: transform 0.3s ease-in-out;
+
 			&:hover {
 				transform: scale(1.1);
 			}
 		}
 	}
-	
 
-	
+
+
 	&_round {
 		flex-grow: 0; //^ Self in _container
 		display: block;
 		text-align: right;
 		margin: 28px 46px 28px auto;
-	
+
 		&_icon {
 			display: inline-block;
 			width: 64px;
 			height: 64px;
 			margin: 0;
 			transition: transform 0.3s ease-in-out;
-	
+
 			&:hover {
 				transform: scale(1.1);
 			}
-	
+
 			& img {
 				width: 100%;
 				height: 100%;
@@ -59,7 +60,7 @@
 
 
 
-	
+
 	&_pages {
 		//^ 1 level
 		flex-grow: 1; //^ Self in _container
@@ -67,42 +68,68 @@
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-	  
-		> li {
-		  //^ 2 level
-		  position: relative;
-	  
-		  > ul {
-			position: absolute;
-			display: flex; // display: none
-			left: 50%;
-			transform: translate(-50%, -50%) scale(0);
-			transition: transform 0.3s ease-in-out;
-	  
-			background-color: aquamarine;
-			border-radius: 50px;
-			padding: 22px; //^ 32px - margin 10px
-			padding-top: 42px;
-	  
-			> * {
-			  margin: 10px;
-			}
-	  
-			flex-direction: column;
-			align-items: center;
-		  }
-	  
-		  > button {
+
+		>li {
+			//^ 2 level
 			position: relative;
-			z-index: 1;
-		  }
-	  
-		  &:hover > ul {
-			display: flex;
-			transform: translate(-50%, -32px) scale(1);
-		  }
+
+			>ul {
+				position: absolute;
+				display: flex; // display: none
+				left: 50%;
+				transform: translate(-50%, -50%) scale(0);
+				transition: transform 0.3s ease-in-out;
+
+				background-color: #FF8652;
+				border-radius: 50px;
+				padding: 22px; //^ 32px - margin 10px
+				padding-top: 42px;
+
+				flex-direction: column;
+				align-items: center;
+
+				>li {
+					width: 100%;
+					margin: 10px;
+					>button{
+						width: 100%;
+					}
+
+
+					
+				}
+			}
+
+			>button {
+				position: relative;
+				z-index: 1;
+			}
+
+			&:hover>ul {
+				display: flex;
+				transform: translate(-50%, -32px) scale(1);
+			}
 		}
-	  }
+
+
+
+
+		&_divider {
+			position: relative;
+			height: 8px;
+			width: 100%;
+			margin: 0 auto;
+			border-radius: 8px;
+			text-align: center;
+			background-color: #FFFFFF;
+			// max-height: 0px;
+		}
+
+		&_title {
+			line-height: 70%;
+			text-align: center;
+		}
+	}
 
 
 
@@ -123,7 +150,7 @@
 			align-items: center;
 			flex-direction: row-reverse;
 		}
-	  }
+	}
 
 
 
@@ -135,5 +162,3 @@
 
 
 }
-
-
