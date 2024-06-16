@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Zeroing */
 body {
-  background-color: #FF8652;
+  background-color: #00d0df;
   margin: 0;
   padding: 0;
 }
@@ -275,4 +275,73 @@ body {
           transform: scale(1.1);
   background-color: #FF3D00;
   color: #FFFFFF;
+}
+
+.background_pale {
+  height: 212px;
+  background: #FF8652;
+}
+
+.background_orange {
+  height: 212px;
+  background: #FF612F;
+}
+
+.background_blue {
+  height: 212px;
+  background: #292B3E;
+}
+
+.background_orange_pale_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF612F), color-stop(50%, #FF8652));
+  background: linear-gradient(to top right, #FF612F 50%, #FF8652 50%);
+}
+
+.background_blue_orange_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, #FF612F));
+  background: linear-gradient(to top right, #292B3E 50%, #FF612F 50%);
+}
+
+.background_blue_orange_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, #FF612F));
+  background: linear-gradient(to bottom right, #292B3E 50%, #FF612F 50%);
+}
+
+.background_blue_pale_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, #FF8652));
+  background: linear-gradient(to bottom right, #292B3E 50%, #FF8652 50%);
+}
+
+.background_blue_pale_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, #FF8652));
+  background: linear-gradient(to top right, #292B3E 50%, #FF8652 50%);
+}
+
+.background_blue_transparent_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom right, #292B3E 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.background_blue_transparent_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top right, #292B3E 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.background_orange_transparent_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FF612F), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom right, #FF612F 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.background_pale_transparent_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF8652), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
 }

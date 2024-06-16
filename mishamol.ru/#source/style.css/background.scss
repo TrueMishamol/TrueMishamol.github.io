@@ -1,0 +1,61 @@
+.background_pale {
+	height: 212px;
+	background: #FF8652;
+}
+
+.background_orange {
+	height: 212px;
+	background: #FF612F;
+}
+
+.background_blue {
+	height: 212px;
+	background: #292B3E;
+}
+
+.background_orange_pale_down {
+	height: 212px;
+	background: linear-gradient(to top right, #FF612F 50%, #FF8652 50%);
+}
+
+.background_blue_orange_down {
+	height: 212px;
+	background: linear-gradient(to top right, #292B3E 50%, #FF612F 50%);
+}
+
+.background_blue_orange_up {
+	height: 212px;
+	background: linear-gradient(to bottom right, #292B3E 50%, #FF612F 50%);
+}
+
+.background_blue_pale_up {
+	height: 212px;
+	background: linear-gradient(to bottom right, #292B3E 50%, #FF8652 50%);
+}
+
+.background_blue_pale_down {
+	height: 212px;
+	background: linear-gradient(to top right, #292B3E 50%, #FF8652 50%);
+}
+
+
+
+.background_blue_transparent_up {
+	height: 212px;
+	background: linear-gradient(to bottom right, #292B3E 50%, #00000000 50%);
+}
+
+.background_blue_transparent_down {
+	height: 212px;
+	background: linear-gradient(to top right, #292B3E 50%, #00000000 50%);
+}
+
+.background_orange_transparent_up {
+	height: 212px;
+	background: linear-gradient(to bottom right, #FF612F 50%, #00000000 50%);
+}
+
+.background_pale_transparent_down {
+	height: 212px;
+	background: linear-gradient(to top right, #FF8652 50%, #00000000 50%);
+}
