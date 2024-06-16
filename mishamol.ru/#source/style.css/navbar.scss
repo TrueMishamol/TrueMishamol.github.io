@@ -5,7 +5,7 @@
 		position: fixed;
 		top: 32px;
 		left: 46px;
-		z-index: 1;
+		z-index: 3;
 
 		&_logo {
 			width: 56px;
@@ -23,6 +23,7 @@
 
 	
 	&_round {
+		flex-grow: 0; //^ Self in _container
 		display: block;
 		text-align: right;
 		margin: 28px 46px 28px auto;
@@ -57,42 +58,66 @@
 
 
 
-	&_buttons {
+
+	&_pages {
+		//^ 1 level
+		flex-grow: 1; //^ Self in _container
 		margin: 28px auto;
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-	}
+
+        > li {
+            //^ 2 level
+			
+            > ul { 
+                position: absolute;
+                display: none;
+                transform: translate(-10px, -32px);
+
+				// Элементы распологаются не по центрру
+				
+				background-color: aquamarine;
+				border-radius: 50px;
+				padding: 22px; //^ 32px - margin 10px
+				padding-top: 42px;
+
+				>* {
+					margin: 10px;
+				}
+
+            }
+            &:hover > ul {
+                display: block;
+            }
+        }
+    }
 
 
 
 
-	&_fixed {
+	&_container {
 		display: block;
 	}
 
 
-	
+
 
 	@media (min-width: 1070px) {
-		&_fixed {
-			padding-left: 104px; // Burger width
+		&_container {
+			padding-left: 104px; //^ Burger width
 
-		  display: flex;
-		  justify-content: space-between;
-		  align-items: center;
-		  flex-direction: row-reverse;
-		}
-	  
-		&_buttons {
-		  flex-grow: 1;
-		}
-	  
-		&_round {
-		//   flex-basis: 0;
-		  flex-grow: 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: row-reverse;
 		}
 	  }
+
+
+
+
+
 
 
 
