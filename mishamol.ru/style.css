@@ -74,9 +74,13 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Zeroing */
 body {
-  background-color: #00d0df;
+  background-color: #FF8652;
   margin: 0;
   padding: 0;
+}
+
+img {
+  image-rendering: crisp-edges;
 }
 
 @font-face {
@@ -101,11 +105,15 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 100px;
+}
+
 .navbar_burger {
-  position: fixed;
+  position: absolute;
   top: 32px;
   left: 46px;
-  z-index: 3;
+  z-index: 1;
 }
 .navbar_burger_logo {
   width: 56px;
@@ -147,8 +155,8 @@ body {
 .navbar_round_icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .navbar_round a {
   display: inline-block;
@@ -171,6 +179,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .navbar_pages > li {
   position: relative;
@@ -198,6 +207,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .navbar_pages > li > ul > li {
   width: 100%;
@@ -208,7 +218,7 @@ body {
 }
 .navbar_pages > li > button {
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 .navbar_pages > li:hover > ul {
   display: -webkit-box;
@@ -279,17 +289,17 @@ body {
 
 .background_pale {
   height: 212px;
-  background: #FF8652;
+  background-color: #FF8652;
 }
 
 .background_orange {
   height: 212px;
-  background: #FF612F;
+  background-color: #FF612F;
 }
 
 .background_blue {
   height: 212px;
-  background: #292B3E;
+  background-color: #292B3E;
 }
 
 .background_orange_pale_down {
@@ -340,8 +350,206 @@ body {
   background: linear-gradient(to bottom right, #FF612F 50%, rgba(0, 0, 0, 0) 50%);
 }
 
+.background_orange_transparent_down {
+  height: 212px;
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF612F), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top right, #FF612F 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.background_pale_transparent_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FF8652), color-stop(50%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
+}
+
 .background_pale_transparent_down {
   height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF8652), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
+}
+
+.mask_transparent_up {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to bottom right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
+          mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to bottom right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
+  -webkit-mask-clip: padding-box;
+          mask-clip: padding-box;
+}
+
+.mask_transparent_down {
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0)));
+  -webkit-mask-image: linear-gradient(to top right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
+          mask-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0)));
+          mask-image: linear-gradient(to top right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
+  -webkit-mask-clip: padding-box;
+          mask-clip: padding-box;
+}
+
+.transparent_mask_up {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FFFFFF));
+  -webkit-mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
+          mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FFFFFF));
+          mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
+  -webkit-mask-clip: padding-box;
+          mask-clip: padding-box;
+}
+
+.transparent_mask_down {
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FFFFFF));
+  -webkit-mask-image: linear-gradient(to top right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
+          mask-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FFFFFF));
+          mask-image: linear-gradient(to top right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
+  -webkit-mask-clip: padding-box;
+          mask-clip: padding-box;
+}
+
+.panorame {
+  position: relative;
+  height: 212px;
+  top: -212px;
+}
+.panorame_round {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: block;
+  text-align: right;
+  margin: 28px 46px 28px auto;
+  position: relative;
+  bottom: -40px;
+}
+.panorame_round_icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.panorame_round_icon:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.panorame_round_icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.panorame_round a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.panorame_up {
+  position: relative;
+  height: 212px;
+  width: 100%;
+}
+.panorame_up > .panorame_image {
+  height: 424px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.panorame_down {
+  position: absolute;
+  height: 212px;
+  width: 100%;
+}
+.panorame_down > .panorame_image {
+  height: 424px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mishamol {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mishamol img {
+  width: 632px;
+  height: auto;
+  margin: auto;
+}
+
+.mishamol_description {
+  height: 100%;
+  max-width: 720px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mishamol_description p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.mishamol_start_button {
+  position: relative;
+  top: -32px;
+  margin: auto;
+  display: block;
+}
+
+.mishamol_sticker_pose {
+  position: relative;
+  margin: auto;
+  display: block;
+  right: -265px;
+  top: -55px;
+  width: 200px;
+  height: 200px;
+}
+
+.gamedev_title {
+  height: 100%;
+  width: 720px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+.gamedev_title h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  position: relative;
+  top: -100px;
+}
+
+.gamedev_description {
+  height: 100%;
+  width: 720px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+.gamedev_description p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  position: relative;
+  top: -10px;
 }
