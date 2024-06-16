@@ -172,21 +172,46 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.navbar_pages > li {
+  position: relative;
+}
 .navbar_pages > li > ul {
   position: absolute;
-  display: none;
-  -webkit-transform: translate(-10px, -32px);
-          transform: translate(-10px, -32px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   background-color: aquamarine;
   border-radius: 50px;
   padding: 22px;
   padding-top: 42px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navbar_pages > li > ul > * {
   margin: 10px;
 }
+.navbar_pages > li > button {
+  position: relative;
+  z-index: 1;
+}
 .navbar_pages > li:hover > ul {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(-50%, -32px) scale(1);
+          transform: translate(-50%, -32px) scale(1);
 }
 .navbar_container {
   display: block;
