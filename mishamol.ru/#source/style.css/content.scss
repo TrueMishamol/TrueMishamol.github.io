@@ -78,3 +78,22 @@
 		top: -10px;
 	}
 }
+
+
+
+
+
+
+.gamedev_games {
+	position: relative;
+	z-index: -1;
+	height: 0;
+	width: 100%;
+	> div {
+		height: 424px;
+		width: 100%;
+		background-color: #292B3E;
+		position: relative;
+		bottom: 212px;
+	}
+}

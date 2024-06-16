@@ -367,6 +367,12 @@ h1 {
   background: linear-gradient(to top right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
 }
 
+.background_transparent_orange_up {
+  height: 212px;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FF612F));
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FF612F 50%);
+}
+
 .mask_transparent_up {
   -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FFFFFF), color-stop(50%, rgba(0, 0, 0, 0)));
   -webkit-mask-image: linear-gradient(to bottom right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
@@ -559,4 +565,18 @@ h1 {
   margin: 0;
   position: relative;
   top: -10px;
+}
+
+.gamedev_games {
+  position: relative;
+  z-index: -1;
+  height: 0;
+  width: 100%;
+}
+.gamedev_games > div {
+  height: 424px;
+  width: 100%;
+  background-color: #292B3E;
+  position: relative;
+  bottom: 212px;
 }
