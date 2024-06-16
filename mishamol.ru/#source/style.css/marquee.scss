@@ -1,0 +1,30 @@
+// Marquee
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.marquee {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: 100%;
+    max-height: 424px;
+    margin: 0 auto;
+    white-space: nowrap;
+
+    &_group, &_duplicate {
+        display: block;
+        animation: scroll 5s infinite linear;
+
+        div {
+            display: block;
+            transition: all 0.3s ease;
+        }
+    }
+}
+

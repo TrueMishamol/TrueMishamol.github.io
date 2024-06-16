@@ -95,5 +95,18 @@
 		background-color: #292B3E;
 		position: relative;
 		bottom: 212px;
+		> div {
+			width: 720px;
+			padding: 0 64px;
+			margin: 0 auto;
+			// > h1 {
+			// 	// position: relative;
+			// 	// top: 50%;
+			// 	left: 0;
+			// 	transform: translate(-50%, 10px) rotate(-90deg);
+			// 	white-space: nowrap;
+			// }
+		}
+
 	}
 }
