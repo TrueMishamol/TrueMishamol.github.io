@@ -286,7 +286,6 @@ h1 {
   background-color: #FF3D00;
   color: #FFFFFF;
 }
-
 .background_pale {
   height: 212px;
   background-color: #FF8652;
@@ -522,6 +521,14 @@ h1 {
   top: -55px;
   width: 200px;
   height: 200px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.mishamol_sticker_pose:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .gamedev_title {

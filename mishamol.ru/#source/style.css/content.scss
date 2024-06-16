@@ -40,6 +40,11 @@
 	top: -55px;
 	width: 200px;
 	height: 200px;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
+	}
 }
 
 
@@ -73,6 +78,3 @@
 		top: -10px;
 	}
 }
-
-
-

@@ -10,8 +10,8 @@
 	white-space: nowrap;
 
 	&.active {
-	  background-color: #292B3E;
-	  color: #FFFFFF;
+		background-color: #292B3E;
+		color: #FFFFFF;
 	}
 
 	&:hover {
@@ -20,5 +20,8 @@
 		color: #FFFFFF;
 	}
 
-
-  }
+	& a {
+		// display: inline-block;
+		// margin: 0 auto;
+	}
+}
