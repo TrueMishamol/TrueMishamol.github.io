@@ -1,5 +1,5 @@
 %base-background {
-	height: 212px;
+	height: var(--212px);
 	z-index: 2;
 	position: relative;
 
@@ -110,21 +110,7 @@
 }
 
 
-// .background_blue_left {
-// 	height: 0px;
-// 	width: 100%;
-// 	margin: -212px, 0 -212px, 0;
-// 	// top: -212px;
-// 	// bottom: -212px;
-// 	position: relative;
 
-// 	>div {
-// 		max-width: 720px;
-// 		margin: auto;
-// 		height: 424px;
-
-// 	}
-// }
 
 
 
@@ -164,25 +150,26 @@
 
 .panorame {
 	position: relative;
-	height: 0px;
-	top: -212px;
+	height: 0;
+	top: var(---212px);
 	pointer-events: none;
+	z-index: 3;
 
 	&_round {
 		flex-grow: 0; //^ Self in _container
 		display: block;
 		text-align: right;
-		margin: 28px 46px 28px auto;
+		margin: var(--32px) var(--50px) var(--32px) auto;
 
 		position: relative;
-		bottom: -40px;
-		z-index: 2;
+		bottom: var(---50px);
+		z-index: 3;
 		pointer-events: none;
 
 		&_icon {
 			display: inline-block;
-			width: 64px;
-			height: 64px;
+			width: var(--64px);
+			height: var(--64px);
 			margin: 0;
 			transition: transform 0.3s ease-in-out;
 
@@ -203,7 +190,7 @@
 			display: inline-block;
 			width: auto;
 			height: auto;
-			margin-left: 8px;
+			margin-left: var(--8px);
 			padding: 0;
 		}
 	}
@@ -218,7 +205,7 @@
 	z-index: 2;
 
 	>.panorame_image {
-		height: 424px;
+		height: var(--424px);
 		width: 100%;
 		object-fit: cover;
 		pointer-events: none;
@@ -232,7 +219,7 @@
 	z-index: 2;
 
 	>.panorame_image {
-		height: 424px;
+		height: var(--424px);
 		width: 100%;
 		position: absolute;
 		bottom: 0;

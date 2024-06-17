@@ -4,15 +4,16 @@
 	display: flex;
 
 	& img {
-		width: 632px;
+		width: var(--720px);
 		height: auto;
 		margin: auto;
+		padding: var(--32px);
 	}
 }
 
 .mishamol_description {
 	height: 100%;
-	max-width: 720px;
+	max-width: var(--720px);
 	margin: auto;
 
 	display: flex;
@@ -27,7 +28,7 @@
 
 .mishamol_start_button {
 	position: relative;
-	top: -212 - 22px;
+	top: var(---256px);
 	margin: auto;
 	display: block;
 	z-index: 3;
@@ -37,10 +38,10 @@
 	position: relative;
 	margin: auto;
 	display: block;
-	right: -265px;
-	top: -55px;
-	width: 200px;
-	height: 200px;
+	right: var(---256px);
+	top: var(---50px);
+	width: var(--212px);
+	height: var(--212px);
 	transition: transform 0.3s ease-in-out;
 
 	&:hover {
@@ -51,24 +52,24 @@
 
 .description_left {
 	height: 100%;
-	width: 720px;
+	width: var(--720px);
 	margin: 0 auto;
-	padding: 0 64px;
+	padding: 0 var(--64px);
 	position: relative;
-	top: -100px;
+	top: var(---100px);
 
 	p {
 		display: flex;
 		margin: 0;
 		position: relative;
-		top: -8px;
+		top: var(---8px);
 	}
 
 	h1 {
 		display: flex;
 		margin: 0;
 		position: relative;
-		top: -16px;
+		top: var(---16px);
 	}
 }
 
@@ -77,18 +78,18 @@
 	text-align: right;
 
 	height: 100%;
-	width: 720px;
+	width: var(--720px);
 	margin: 0 auto;
-	padding: 0 64px;
+	padding: 0 var(--64px);
 	position: relative;
-	top: -100px;
+	top: var(---100px);
 
 	p {
 		display: flex;
 		justify-content: flex-end;
 		margin: 0;
 		position: relative;
-		top: -8px;
+		top: var(---8px);
 	}
 
 	h1 {
@@ -96,7 +97,7 @@
 		justify-content: flex-end;
 		margin: 0;
 		position: relative;
-		top: -16px;
+		top: var(---16px);
 	}
 }
 
@@ -106,18 +107,18 @@
 	text-align: center;
 
 	height: 100%;
-	width: 720px;
+	width: var(--720px);
 	margin: 0 auto;
-	padding: 0 64px;
+	padding: 0 var(--64px);
 	position: relative;
-	top: -135px;
+	top: var(---128px);
 
 	p {
 		display: flex;
 		justify-content: center;
 		margin: 0;
 		position: relative;
-		top: -8px;
+		top: var(---8px);
 	}
 
 	h1 {
@@ -125,12 +126,12 @@
 		justify-content: center;
 		margin: 0;
 		position: relative;
-		top: -16px;
+		top: var(---16px);
 	}
 
 	>.button {
 		position: relative;
-		top: 25px;
+		top: var(--32px);
 	}
 }
 
@@ -143,23 +144,16 @@
 	width: 100%;
 
 	>div {
-		height: 424px;
+		height: var(--424px);
 		width: 100%;
 		background-color: #292B3E;
 		position: relative;
-		bottom: 212px;
+		bottom: var(--212px);
 
 		>div {
-			width: 720px;
-			padding: 0 64px;
+			width: var(--720px);
+			padding: 0 var(--64px);
 			margin: 0 auto;
-			// > h1 {
-			// 	// position: relative;
-			// 	// top: 50%;
-			// 	left: 0;
-			// 	transform: translate(-50%, 10px) rotate(-90deg);
-			// 	white-space: nowrap;
-			// }
 		}
 
 	}
@@ -178,8 +172,8 @@
 
 .mishamol_download {
 	position: relative;
-	top: -45px;
-	right: -100px;
+	top: var(---50px);
+	right: var(---100px);
 
 	display: flex;
 	flex-direction: column;
@@ -188,7 +182,7 @@
 	margin: 0 auto;
 
 	p {
-		margin: -10px 0 45px 0;
+		margin: var(---8px) 0 var(--50px) 0;
 	}
 
 }
@@ -197,10 +191,10 @@
 	position: relative;
 	margin: auto;
 	display: block;
-	left: -210px;
-	top: -120px;
-	width: 200px;
-	height: 200px;
+	left: var(---212px);
+	top: var(---128px);
+	width: var(--212px);
+	height: var(--212px);
 	transition: transform 0.3s ease-in-out;
 
 	&:hover {
@@ -218,5 +212,5 @@
 	justify-content: center;
 	align-items: flex-end;
 
-	padding: 50px;
+	padding: var(--50px);
 }

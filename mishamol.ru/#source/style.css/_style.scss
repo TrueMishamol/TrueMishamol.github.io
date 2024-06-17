@@ -1,3 +1,45 @@
+:root {
+		--2px: 2px;
+
+		---8px: -8px;
+		--8px: 8px;
+
+		--12px: 12px; // Buttons
+
+		---16px: -16px;
+		--16px: 16px;
+
+		--32px: 32px;
+
+		--40px: 40px; // Buttons
+
+		---50px: -50px;
+		--50px: 50px;
+
+		--56px: 56px; // Logo
+
+		--64px: 64px;
+
+		---100px: -100px;
+		--100px: 100px;
+
+		---128px: -128px;
+		--128px: 128px;
+
+		---212px: -212px;
+		--212px: 212px;
+
+		---256px: -256px;
+
+		--424px: 424px;
+
+		--720px: 720px;
+}
+
+
+
+
+
 @import "zeroing.scss";
 @import "body.scss";
 @import "font.scss";

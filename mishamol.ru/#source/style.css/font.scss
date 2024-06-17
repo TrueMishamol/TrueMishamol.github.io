@@ -7,7 +7,7 @@
 
 body {
 	font-family: 'MishamolPuffedBun2-Regular', sans-serif;
-	font-size: 50px;
+	font-size: var(--50px);
 	color: #FFFFFF;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-	font-size: 100px;
+	font-size: var(--100px);
 }
 
 p {
