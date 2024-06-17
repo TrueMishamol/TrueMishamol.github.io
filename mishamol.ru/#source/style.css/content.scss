@@ -82,13 +82,15 @@
 	z-index: 0;
 	height: 0;
 	width: 100%;
-	> div {
+
+	>div {
 		height: 424px;
 		width: 100%;
 		background-color: #292B3E;
 		position: relative;
 		bottom: 212px;
-		> div {
+
+		>div {
 			width: 720px;
 			padding: 0 64px;
 			margin: 0 auto;
@@ -101,5 +103,40 @@
 			// }
 		}
 
+	}
+}
+
+
+
+
+.mishamol_download {
+	position: relative;
+	top: -45px;
+	right: -100px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+
+	p {
+		margin: -10px 0 45px 0;
+	}
+
+}
+
+.mishamol_sticker_cool {
+	position: relative;
+	margin: auto;
+	display: block;
+	left: -210px;
+	top: -120px;
+	width: 200px;
+	height: 200px;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.1);
 	}
 }
