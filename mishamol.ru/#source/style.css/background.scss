@@ -3,6 +3,11 @@
 	z-index: 2;
 	position: relative;
 
+	pointer-events: none;
+
+	>* {
+		pointer-events: all;
+	}
 }
 
 
@@ -14,50 +19,49 @@
 .background_orange {
 	@extend %base-background;
 	background-color: #FF612F;
-	
+
 }
 
 .background_blue {
 	@extend %base-background;
 	background-color: #292B3E;
-	
+
 }
 
 .background_transparent {
 	@extend %base-background;
 	background-color: #00000000;
-	pointer-events: none;
-	
+
 }
 
 .background_orange_pale_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #FF612F 50%, #FF8652 50%);
-	
+
 }
 
 .background_blue_orange_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #292B3E 50%, #FF612F 50%);
-	
+
 }
 
 .background_blue_orange_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #292B3E 50%, #FF612F 50%);
-	
+
 }
 
 .background_blue_pale_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #292B3E 50%, #FF8652 50%);
-	
+
 }
 
 .background_blue_pale_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #292B3E 50%, #FF8652 50%);
-	
+
 }
 
 
@@ -67,44 +71,42 @@
 .background_blue_transparent_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #292B3E 50%, #00000000 50%);
-	
+
 }
 
 .background_blue_transparent_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #292B3E 50%, #00000000 50%);
-	
+
 }
 
 .background_orange_transparent_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #FF612F 50%, #00000000 50%);
-	
+
 }
 
 .background_orange_transparent_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #FF612F 50%, #00000000 50%);
-	
+
 }
 
 .background_pale_transparent_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #FF8652 50%, #00000000 50%);
-	
+
 }
 
 .background_pale_transparent_down {
 	@extend %base-background;
 	background: linear-gradient(to top right, #FF8652 50%, #00000000 50%);
-	
+
 }
 
 .background_transparent_orange_up {
 	@extend %base-background;
 	background: linear-gradient(to bottom right, #00000000 50%, #FF612F 50%);
-	pointer-events: none;
-	
 }
 
 
@@ -164,6 +166,7 @@
 	position: relative;
 	height: 0px;
 	top: -212px;
+	pointer-events: none;
 
 	&_round {
 		flex-grow: 0; //^ Self in _container
@@ -172,8 +175,9 @@
 		margin: 28px 46px 28px auto;
 
 		position: relative;
-		bottom: -40px; 
+		bottom: -40px;
 		z-index: 2;
+		pointer-events: none;
 
 		&_icon {
 			display: inline-block;

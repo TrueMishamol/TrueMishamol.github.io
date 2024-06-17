@@ -77,6 +77,7 @@ body {
   background-color: #FF8652;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -111,6 +112,10 @@ body {
 
 h1 {
   font-size: 100px;
+}
+
+p {
+  line-height: 90%;
 }
 
 .navbar_burger {
@@ -294,6 +299,10 @@ h1 {
   height: 212px;
   z-index: 2;
   position: relative;
+  pointer-events: none;
+}
+.panorame_down > *, .panorame_up > *, .transparent_mask_down > *, .transparent_mask_up > *, .mask_transparent_down > *, .mask_transparent_up > *, .background_transparent_orange_up > *, .background_pale_transparent_down > *, .background_pale_transparent_up > *, .background_orange_transparent_down > *, .background_orange_transparent_up > *, .background_blue_transparent_down > *, .background_blue_transparent_up > *, .background_blue_pale_down > *, .background_blue_pale_up > *, .background_blue_orange_up > *, .background_blue_orange_down > *, .background_orange_pale_down > *, .background_transparent > *, .background_blue > *, .background_orange > *, .background_pale > * {
+  pointer-events: all;
 }
 
 .background_pale {
@@ -310,7 +319,6 @@ h1 {
 
 .background_transparent {
   background-color: rgba(0, 0, 0, 0);
-  pointer-events: none;
 }
 
 .background_orange_pale_down {
@@ -371,7 +379,6 @@ h1 {
 .background_transparent_orange_up {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FF612F));
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FF612F 50%);
-  pointer-events: none;
 }
 
 .mask_transparent_up {
@@ -418,6 +425,7 @@ h1 {
   position: relative;
   height: 0px;
   top: -212px;
+  pointer-events: none;
 }
 .panorame_round {
   -webkit-box-flex: 0;
@@ -429,6 +437,7 @@ h1 {
   position: relative;
   bottom: -40px;
   z-index: 2;
+  pointer-events: none;
 }
 .panorame_round_icon {
   display: inline-block;
@@ -547,7 +556,7 @@ h1 {
           transform: scale(1.1);
 }
 
-.gamedev_description {
+.description_left {
   height: 100%;
   width: 720px;
   margin: 0 auto;
@@ -555,7 +564,7 @@ h1 {
   position: relative;
   top: -100px;
 }
-.gamedev_description p {
+.description_left p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,13 +572,81 @@ h1 {
   position: relative;
   top: -8px;
 }
-.gamedev_description h1 {
+.description_left h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0;
   position: relative;
   top: -16px;
+}
+
+.description_right {
+  text-align: right;
+  height: 100%;
+  width: 720px;
+  margin: 0 auto;
+  padding: 0 64px;
+  position: relative;
+  top: -100px;
+}
+.description_right p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  position: relative;
+  top: -8px;
+}
+.description_right h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  position: relative;
+  top: -16px;
+}
+
+.description_center {
+  text-align: center;
+  height: 100%;
+  width: 720px;
+  margin: 0 auto;
+  padding: 0 64px;
+  position: relative;
+  top: -135px;
+}
+.description_center p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: relative;
+  top: -8px;
+}
+.description_center h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  position: relative;
+  top: -16px;
+}
+.description_center > .button {
+  position: relative;
+  top: 25px;
 }
 
 .gamedev_games {
@@ -589,6 +666,16 @@ h1 {
   width: 720px;
   padding: 0 64px;
   margin: 0 auto;
+}
+.gamedev_games img {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.gamedev_games img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mishamol_download {
@@ -630,6 +717,22 @@ h1 {
 .mishamol_sticker_cool:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.mail {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 50px;
 }
 
 @-webkit-keyframes scroll {

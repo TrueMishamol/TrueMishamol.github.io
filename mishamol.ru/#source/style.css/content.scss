@@ -49,7 +49,7 @@
 }
 
 
-.gamedev_description {
+.description_left {
 	height: 100%;
 	width: 720px;
 	margin: 0 auto;
@@ -73,7 +73,66 @@
 }
 
 
+.description_right {
+	text-align: right;
 
+	height: 100%;
+	width: 720px;
+	margin: 0 auto;
+	padding: 0 64px;
+	position: relative;
+	top: -100px;
+
+	p {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+		position: relative;
+		top: -8px;
+	}
+
+	h1 {
+		display: flex;
+		justify-content: flex-end;
+		margin: 0;
+		position: relative;
+		top: -16px;
+	}
+}
+
+//^ A bit different
+//^ Used for Archive
+.description_center {
+	text-align: center;
+
+	height: 100%;
+	width: 720px;
+	margin: 0 auto;
+	padding: 0 64px;
+	position: relative;
+	top: -135px;
+
+	p {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		position: relative;
+		top: -8px;
+	}
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		position: relative;
+		top: -16px;
+	}
+
+	>.button {
+		position: relative;
+		top: 25px;
+	}
+}
 
 
 
@@ -103,6 +162,14 @@
 			// }
 		}
 
+	}
+
+	img {
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
@@ -139,4 +206,17 @@
 	&:hover {
 		transform: scale(1.1);
 	}
+}
+
+
+.mail {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	padding: 50px;
 }
