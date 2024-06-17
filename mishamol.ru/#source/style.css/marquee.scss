@@ -3,6 +3,7 @@
     0% {
         transform: translateY(0);
     }
+
     100% {
         transform: translateY(-100%);
     }
@@ -17,9 +18,10 @@
     margin: 0 auto;
     white-space: nowrap;
 
-    &_group, &_duplicate {
+    &_group,
+    &_duplicate {
         display: block;
-        animation: scroll 5s infinite linear;
+        animation: scroll 15s infinite linear;
 
         div {
             display: block;
@@ -28,3 +30,39 @@
     }
 }
 
+
+
+
+
+.marquee_game {
+    width: 720px;
+    padding: 0 90px;
+    margin: 0 auto;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            height: 116px; //^ 100 + padding 16
+            padding-bottom: 16px;
+            position: relative;
+        }
+
+        li img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        li p {
+            position: absolute;
+
+            left: 116px;
+        }
+
+    }
+}
