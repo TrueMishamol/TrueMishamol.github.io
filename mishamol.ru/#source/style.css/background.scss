@@ -13,6 +13,11 @@
 	background-color: #292B3E;
 }
 
+.background_transparent {
+	height: 212px;
+	background-color: #00000000;
+}
+
 .background_orange_pale_down {
 	height: 212px;
 	background: linear-gradient(to top right, #FF612F 50%, #FF8652 50%);
@@ -126,7 +131,7 @@
 
 .panorame {
 	position: relative;
-	height: 212px;
+	height: 0px;
 	top: -212px;
 
 
