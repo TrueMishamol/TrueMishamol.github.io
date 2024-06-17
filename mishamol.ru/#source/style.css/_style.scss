@@ -1,41 +1,80 @@
 :root {
-		--2px: 2px;
+	--2px: 2px;
 
-		---8px: -8px;
-		--8px: 8px;
+	---8px: -8px;
+	--8px: 8px;
 
-		--12px: 12px; // Buttons
+	--12px: 12px; // Buttons
 
-		---16px: -16px;
-		--16px: 16px;
+	---16px: -16px;
+	--16px: 16px;
 
-		--32px: 32px;
+	--32px: 32px;
 
-		--40px: 40px; // Buttons
+	--40px: 40px; // Buttons
 
-		---50px: -50px;
-		--50px: 50px;
+	---50px: -50px;
+	--50px: 50px;
 
-		--56px: 56px; // Logo
+	--56px: 56px; // Logo
 
-		--64px: 64px;
+	--64px: 64px;
 
-		---100px: -100px;
-		--100px: 100px;
+	---100px: -100px;
+	--100px: 100px;
 
-		---128px: -128px;
-		--128px: 128px;
+	---128px: -128px;
+	--128px: 128px;
 
-		---212px: -212px;
-		--212px: 212px;
+	---212px: -212px;
+	--212px: 212px;
 
-		---256px: -256px;
+	---256px: -256px;
 
-		--424px: 424px;
+	--424px: 424px;
 
-		--720px: 720px;
+	--720px: 720px;
 }
 
+@media (max-width: 720px) {
+	:root {
+		--2px: .2vw;
+
+		---8px: -.8vw;
+		--8px: .8vw;
+
+		--12px: 1.2vw; // Buttons
+
+		---16px: -1.6vw;
+		--16px: 1.6vw;
+
+		--32px: 3.2vw;
+
+		--40px: 4.0vw; // Buttons
+
+		---50px: -5.0vw;
+		--50px: 5.0vw;
+
+		--56px: 5.6vw; // Logo
+
+		--64px: 6.4vw;
+
+		---100px: -10.0vw;
+		--100px: 10.0vw;
+
+		---128px: -12.8vw;
+		--128px: 12.8vw;
+
+		---212px: -21.2vw;
+		--212px: 21.2vw;
+
+		---256px: -25.6vw;
+
+		--424px: 42.4vw;
+
+		--720px: 72.0vw;
+	}
+}
 
 
 
