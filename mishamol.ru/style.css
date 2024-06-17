@@ -117,7 +117,7 @@ h1 {
   position: absolute;
   top: 32px;
   left: 46px;
-  z-index: 1;
+  z-index: 3;
 }
 .navbar_burger_logo {
   width: 56px;
@@ -183,7 +183,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
+  z-index: 4;
 }
 .navbar_pages > li {
   position: relative;
@@ -211,7 +211,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 2;
+  z-index: 4;
 }
 .navbar_pages > li > ul > li {
   width: 100%;
@@ -222,7 +222,7 @@ h1 {
 }
 .navbar_pages > li > button {
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 .navbar_pages > li:hover > ul {
   display: -webkit-box;
@@ -290,96 +290,88 @@ h1 {
   background-color: #FF3D00;
   color: #FFFFFF;
 }
-.background_pale {
+.panorame_down, .panorame_up, .transparent_mask_down, .transparent_mask_up, .mask_transparent_down, .mask_transparent_up, .background_transparent_orange_up, .background_pale_transparent_down, .background_pale_transparent_up, .background_orange_transparent_down, .background_orange_transparent_up, .background_blue_transparent_down, .background_blue_transparent_up, .background_blue_pale_down, .background_blue_pale_up, .background_blue_orange_up, .background_blue_orange_down, .background_orange_pale_down, .background_transparent, .background_blue, .background_orange, .background_pale {
   height: 212px;
+  z-index: 2;
+  position: relative;
+}
+
+.background_pale {
   background-color: #FF8652;
 }
 
 .background_orange {
-  height: 212px;
   background-color: #FF612F;
 }
 
 .background_blue {
-  height: 212px;
   background-color: #292B3E;
 }
 
 .background_transparent {
-  height: 212px;
   background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
 }
 
 .background_orange_pale_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF612F), color-stop(50%, #FF8652));
   background: linear-gradient(to top right, #FF612F 50%, #FF8652 50%);
 }
 
 .background_blue_orange_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, #FF612F));
   background: linear-gradient(to top right, #292B3E 50%, #FF612F 50%);
 }
 
 .background_blue_orange_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, #FF612F));
   background: linear-gradient(to bottom right, #292B3E 50%, #FF612F 50%);
 }
 
 .background_blue_pale_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, #FF8652));
   background: linear-gradient(to bottom right, #292B3E 50%, #FF8652 50%);
 }
 
 .background_blue_pale_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, #FF8652));
   background: linear-gradient(to top right, #292B3E 50%, #FF8652 50%);
 }
 
 .background_blue_transparent_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #292B3E), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom right, #292B3E 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_blue_transparent_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292B3E), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top right, #292B3E 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_orange_transparent_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FF612F), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom right, #FF612F 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_orange_transparent_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF612F), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top right, #FF612F 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_pale_transparent_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, #FF8652), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to bottom right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_pale_transparent_down {
-  height: 212px;
   background: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #FF8652), color-stop(50%, rgba(0, 0, 0, 0)));
   background: linear-gradient(to top right, #FF8652 50%, rgba(0, 0, 0, 0) 50%);
 }
 
 .background_transparent_orange_up {
-  height: 212px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #FF612F));
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FF612F 50%);
+  pointer-events: none;
 }
 
 .mask_transparent_up {
@@ -389,6 +381,7 @@ h1 {
           mask-image: linear-gradient(to bottom right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
   -webkit-mask-clip: padding-box;
           mask-clip: padding-box;
+  pointer-events: none;
 }
 
 .mask_transparent_down {
@@ -398,6 +391,7 @@ h1 {
           mask-image: linear-gradient(to top right, #FFFFFF 50%, rgba(0, 0, 0, 0) 50%);
   -webkit-mask-clip: padding-box;
           mask-clip: padding-box;
+  pointer-events: none;
 }
 
 .transparent_mask_up {
@@ -407,6 +401,7 @@ h1 {
           mask-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
   -webkit-mask-clip: padding-box;
           mask-clip: padding-box;
+  pointer-events: none;
 }
 
 .transparent_mask_down {
@@ -416,6 +411,7 @@ h1 {
           mask-image: linear-gradient(to top right, rgba(0, 0, 0, 0) 50%, #FFFFFF 50%);
   -webkit-mask-clip: padding-box;
           mask-clip: padding-box;
+  pointer-events: none;
 }
 
 .panorame {
@@ -432,6 +428,7 @@ h1 {
   margin: 28px 46px 28px auto;
   position: relative;
   bottom: -40px;
+  z-index: 2;
 }
 .panorame_round_icon {
   display: inline-block;
@@ -442,6 +439,7 @@ h1 {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  pointer-events: all;
 }
 .panorame_round_icon:hover {
   -webkit-transform: scale(1.1);
@@ -463,20 +461,21 @@ h1 {
 
 .panorame_up {
   position: relative;
-  height: 212px;
   width: 100%;
+  z-index: 2;
 }
 .panorame_up > .panorame_image {
   height: 424px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 
 .panorame_down {
   position: absolute;
-  height: 212px;
   width: 100%;
+  z-index: 2;
 }
 .panorame_down > .panorame_image {
   height: 424px;
@@ -485,6 +484,7 @@ h1 {
   bottom: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 
 .mishamol {
@@ -523,9 +523,10 @@ h1 {
 
 .mishamol_start_button {
   position: relative;
-  top: -32px;
+  top: -234px;
   margin: auto;
   display: block;
+  z-index: 3;
 }
 
 .mishamol_sticker_pose {
@@ -546,26 +547,13 @@ h1 {
           transform: scale(1.1);
 }
 
-.gamedev_title {
-  height: 100%;
-  width: 720px;
-  margin: 0 auto;
-  padding: 0 64px;
-}
-.gamedev_title h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-  position: relative;
-  top: -100px;
-}
-
 .gamedev_description {
   height: 100%;
   width: 720px;
   margin: 0 auto;
   padding: 0 64px;
+  position: relative;
+  top: -100px;
 }
 .gamedev_description p {
   display: -webkit-box;
@@ -573,12 +561,20 @@ h1 {
   display: flex;
   margin: 0;
   position: relative;
-  top: -10px;
+  top: -8px;
+}
+.gamedev_description h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  position: relative;
+  top: -16px;
 }
 
 .gamedev_games {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   height: 0;
   width: 100%;
 }

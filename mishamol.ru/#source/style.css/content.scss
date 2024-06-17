@@ -27,9 +27,10 @@
 
 .mishamol_start_button {
 	position: relative;
-	top: -32px;
+	top: -212 - 22px;
 	margin: auto;
 	display: block;
+	z-index: 3;
 }
 
 .mishamol_sticker_pose {
@@ -48,34 +49,26 @@
 }
 
 
-
-.gamedev_title {
-	height: 100%;
-	width: 720px;
-	margin: 0 auto;
-	padding: 0 64px;
-
-
-	h1 {
-		display: flex;
-		margin: 0;
-		position: relative;
-		top: -100px;
-	}
-}
-
 .gamedev_description {
 	height: 100%;
 	width: 720px;
 	margin: 0 auto;
 	padding: 0 64px;
-
+	position: relative;
+	top: -100px;
 
 	p {
 		display: flex;
 		margin: 0;
 		position: relative;
-		top: -10px;
+		top: -8px;
+	}
+
+	h1 {
+		display: flex;
+		margin: 0;
+		position: relative;
+		top: -16px;
 	}
 }
 
@@ -86,7 +79,7 @@
 
 .gamedev_games {
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 	height: 0;
 	width: 100%;
 	> div {

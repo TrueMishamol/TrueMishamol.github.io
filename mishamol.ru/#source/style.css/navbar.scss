@@ -6,7 +6,7 @@
 		position: absolute;
 		top: 32px;
 		left: 46px;
-		z-index: 1;
+		z-index: 3;
 
 		&_logo {
 			width: 56px;
@@ -29,7 +29,6 @@
 		display: block;
 		text-align: right;
 		margin: 28px 46px 28px auto;
-		// z-index: 10;
 
 		&_icon {
 			display: inline-block;
@@ -70,7 +69,7 @@
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
-		z-index: 2;
+		z-index: 4;
 
 		>li {
 			//^ 2 level
@@ -90,7 +89,7 @@
 
 				flex-direction: column;
 				align-items: center;
-				z-index: 2;
+				z-index: 4;
 
 
 				>li {
@@ -107,7 +106,7 @@
 
 			>button {
 				position: relative;
-				z-index: 3;
+				z-index: 5;
 			}
 
 			&:hover>ul {
