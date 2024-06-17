@@ -10,6 +10,7 @@
   ---50px: -50px;
   --50px: 50px;
   --56px: 56px;
+  ---64px: -64px;
   --64px: 64px;
   ---100px: -100px;
   --100px: 100px;
@@ -35,6 +36,7 @@
     ---50px: -6.95vw;
     --50px: 6.95vw;
     --56px: 7.784vw;
+    ---64px: -8.896vw;
     --64px: 8.896vw;
     ---100px: -13.9vw;
     --100px: 13.9vw;
@@ -60,6 +62,7 @@
     ---50px: -3.35vw;
     --50px: 3.35vw;
     --56px: 3.752vw;
+    ---64px: -4.288vw;
     --64px: 4.288vw;
     ---100px: -6.7vw;
     --100px: 6.7vw;
@@ -619,7 +622,7 @@ p {
   margin: auto;
   display: block;
   right: var(---256px);
-  top: var(---50px);
+  top: var(---64px);
   width: var(--212px);
   height: var(--212px);
   -webkit-transition: -webkit-transform 0.3s ease-in-out;

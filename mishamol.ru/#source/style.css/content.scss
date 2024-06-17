@@ -39,7 +39,7 @@
 	margin: auto;
 	display: block;
 	right: var(---256px);
-	top: var(---50px);
+	top: var(---64px);
 	width: var(--212px);
 	height: var(--212px);
 	transition: transform 0.3s ease-in-out;
@@ -48,6 +48,8 @@
 		transform: scale(1.1);
 	}
 }
+
+
 
 
 .description_left {
@@ -72,7 +74,6 @@
 		top: var(---16px);
 	}
 }
-
 
 .description_right {
 	text-align: right;
@@ -134,6 +135,7 @@
 		top: var(--32px);
 	}
 }
+
 
 
 
@@ -201,6 +203,8 @@
 		transform: scale(1.1);
 	}
 }
+
+
 
 
 .mail {
