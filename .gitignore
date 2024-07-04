@@ -1,4 +1,6 @@
-*desktop.ini
+desktop.ini
+!/desktop.ini
+
 *.jpg~
 *.png~
 *.kra~
