@@ -8,6 +8,12 @@
 		height: auto;
 		margin: auto;
 		padding: var(--32px);
+
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 	}
 }
 
@@ -15,10 +21,14 @@
 	height: 100%;
 	max-width: var(--720px);
 	margin: auto;
+	padding: 0 var(--50px);
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	position: relative;
+	bottom: var(--50px);
 
 	p {
 		display: flex;
@@ -46,6 +56,24 @@
 
 	&:hover {
 		transform: scale(1.1);
+	}
+}
+
+.sticker_arrow {
+	position: relative;
+	margin: auto;
+	display: block;
+	width: var(--212px);
+	height: 0;
+
+	img {
+		right: var(---256px);
+		top: var(---50px);
+
+		position: relative;
+		margin: auto;
+		width: var(--212px);
+		height: var(--212px);
 	}
 }
 

@@ -586,12 +586,21 @@ p {
   height: auto;
   margin: auto;
   padding: var(--32px);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+.mishamol img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .mishamol_description {
   height: 100%;
   max-width: var(--720px);
   margin: auto;
+  padding: 0 var(--50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -601,6 +610,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  bottom: var(--50px);
 }
 .mishamol_description p {
   display: -webkit-box;
@@ -633,6 +644,22 @@ p {
 .mishamol_sticker_pose:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.sticker_arrow {
+  position: relative;
+  margin: auto;
+  display: block;
+  width: var(--212px);
+  height: 0;
+}
+.sticker_arrow img {
+  right: var(---256px);
+  top: var(---50px);
+  position: relative;
+  margin: auto;
+  width: var(--212px);
+  height: var(--212px);
 }
 
 .description_left {
