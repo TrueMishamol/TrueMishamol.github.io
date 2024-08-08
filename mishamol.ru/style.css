@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --2px: 2px;
   ---8px: -8px;
@@ -936,17 +935,17 @@ p {
   height: 100%;
   width: 100%;
   z-index: 7;
-  opacity: 0; /* Начальная непрозрачность */
+  opacity: 0;
   -webkit-transition: opacity 0.5s ease;
-  transition: opacity 0.5s ease; /* Плавный переход для opacity */
+  transition: opacity 0.5s ease;
   visibility: hidden;
 }
 .popup.show {
-  opacity: 1; /* Полная непрозрачность */
+  opacity: 1;
   visibility: visible;
 }
 .popup.hiding {
-  opacity: 0; /* Полная непрозрачность */
+  opacity: 0;
   visibility: visible;
 }
 .popup_content {
@@ -983,9 +982,9 @@ p {
   width: 100%;
   margin: var(--8px);
 }
-.popup_content > ul > li > button {
+.popup_content > ul > li > .button {
   width: 100%;
 }
-.popup_content > button {
+.popup_content > .button {
   position: relative;
 }

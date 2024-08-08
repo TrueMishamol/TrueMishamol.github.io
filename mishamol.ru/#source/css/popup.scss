@@ -9,18 +9,16 @@
 	width: 100%;
 	z-index: 7;
 
-	opacity: 0; /* Начальная непрозрачность */
-    transition: opacity 0.5s ease; /* Плавный переход для opacity */
+	opacity: 0;
+    transition: opacity 0.5s ease;
 	visibility: hidden;
 	
 	&.show {
-		// display: block; /* Показываем поп-ап */
-		opacity: 1; /* Полная непрозрачность */
+		opacity: 1;
 		visibility: visible;
 	}
 	&.hiding {
-		// display: block; /* Показываем поп-ап */
-		opacity: 0; /* Полная непрозрачность */
+		opacity: 0;
 		visibility: visible;
 	}
 
@@ -37,34 +35,28 @@
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
-			// transform: scale(0);
-
 
 			transition: transform 0.3s ease-in-out;
 
 			background-color: #FF8652;
 			border-radius: var(--50px);
 			padding: var(--32px);
-			// padding-top: var(--50px);
 
 			flex-direction: column;
 			align-items: center;
-			// z-index: 4;
-
 
 			>li {
 				width: 100%;
 				margin: var(--8px);
 
-				>button {
+				>.button {
 					width: 100%;
 				}
 			}
 		}
 
-		>button {
+		>.button {
 			position: relative;
-			// z-index: 5;
 		}
 	}
 

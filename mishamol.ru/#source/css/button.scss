@@ -1,24 +1,24 @@
 .button {
-	display: inline-block; // Чтобы элемент вел себя как кнопка
+	display: inline-block;
 	background-color: #FFFFFF;
 	color: #292B3E;
 	padding: 0 var(--40px) var(--12px);
 	border: none;
 	border-radius: var(--64px);
-	cursor: pointer; // Указатель курсора
+	cursor: pointer;
 	font-size: var(--50px);
 	text-align: center;
-	text-decoration: none; // Убираем подчеркивание
+	text-decoration: none;
 	transition: transform 0.3s ease-in-out;
 	white-space: nowrap;
 	-webkit-tap-highlight-color: transparent;
 }
 
-
 // .button:focus {
 //     outline: none;
 //     color: #292B3E;
 // }
+
 .button:visited {
     outline: none;
     color: #292B3E;
