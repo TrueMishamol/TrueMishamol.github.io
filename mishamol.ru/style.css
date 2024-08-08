@@ -6,6 +6,7 @@
   --12px: 12px;
   ---16px: -16px;
   --16px: 16px;
+  ---32px: -32px;
   --32px: 32px;
   --40px: 40px;
   ---50px: -50px;
@@ -32,6 +33,7 @@
     --12px: 1.668vw;
     ---16px: -2.224vw;
     --16px: 2.224vw;
+    ---32px: -4.448vw;
     --32px: 4.448vw;
     --40px: 5.56vw;
     ---50px: -6.95vw;
@@ -58,6 +60,7 @@
     --12px: 0.804vw;
     ---16px: -1.072vw;
     --16px: 1.072vw;
+    ---32px: -2.144vw;
     --32px: 2.144vw;
     --40px: 2.68vw;
     ---50px: -3.35vw;
@@ -199,7 +202,7 @@ p {
   position: absolute;
   top: var(--32px);
   left: var(--50px);
-  z-index: 3;
+  z-index: 5;
 }
 .navbar_burger_logo {
   width: var(--56px);
@@ -265,7 +268,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 4;
+  z-index: 6;
 }
 .navbar_pages > li {
   position: relative;
@@ -293,7 +296,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 4;
+  z-index: 6;
 }
 .navbar_pages > li > ul > li {
   width: 100%;
@@ -304,14 +307,14 @@ p {
 }
 .navbar_pages > li > button {
   position: relative;
-  z-index: 5;
+  z-index: 7;
 }
 .navbar_pages > li:hover > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: translate(-50%, -32px) scale(1);
-          transform: translate(-50%, -32px) scale(1);
+  -webkit-transform: translate(-50%, var(---32px)) scale(1);
+          transform: translate(-50%, var(---32px)) scale(1);
 }
 .navbar_pages_divider {
   position: relative;
@@ -361,6 +364,7 @@ p {
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
 }
 .button.active {
   background-color: #292B3E;
@@ -641,7 +645,7 @@ p {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  z-index: 6;
+  z-index: 4;
 }
 .mishamol_sticker_pose:hover {
   -webkit-transform: scale(1.1);
@@ -821,7 +825,7 @@ p {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  z-index: 6;
+  z-index: 4;
 }
 .mishamol_sticker_cool:hover {
   -webkit-transform: scale(1.1);
@@ -961,7 +965,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 4;
 }
 .popup_content > ul > li {
   width: 100%;
@@ -972,5 +975,4 @@ p {
 }
 .popup_content > button {
   position: relative;
-  z-index: 5;
 }

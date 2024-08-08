@@ -9,6 +9,8 @@
 	transition: transform 0.3s ease-in-out;
 	white-space: nowrap;
 
+	-webkit-tap-highlight-color: transparent;
+
 	&.active {
 		background-color: #292B3E;
 		color: #FFFFFF;
