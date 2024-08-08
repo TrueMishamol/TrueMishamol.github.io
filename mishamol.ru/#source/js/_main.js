@@ -1,2 +1,2 @@
-//@prepros-append confetti.js
 //@prepros-append draggable.js
+//@prepros-append popup.js

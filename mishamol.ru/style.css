@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --2px: 2px;
   ---8px: -8px;
@@ -640,7 +641,7 @@ p {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  z-index: 100;
+  z-index: 6;
 }
 .mishamol_sticker_pose:hover {
   -webkit-transform: scale(1.1);
@@ -820,7 +821,7 @@ p {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  z-index: 100;
+  z-index: 6;
 }
 .mishamol_sticker_cool:hover {
   -webkit-transform: scale(1.1);
@@ -910,49 +911,66 @@ p {
   left: var(--128px);
 }
 
-.confetti-button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0;
+.popup {
+  background-color: rgba(255, 97, 47, 0.5647058824);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 7;
+  opacity: 0; /* Начальная непрозрачность */
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; /* Плавный переход для opacity */
+  visibility: hidden;
+}
+.popup.show {
+  opacity: 1; /* Полная непрозрачность */
+  visibility: visible;
+}
+.popup.hiding {
+  opacity: 0; /* Полная непрозрачность */
+  visibility: visible;
+}
+.popup_content {
+  pointer-events: none;
+}
+.popup_content > * {
+  pointer-events: all;
+}
+.popup_content > ul {
   position: absolute;
-  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   left: 50%;
+  top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  background-color: #FF8652;
+  border-radius: var(--50px);
+  padding: var(--32px);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 4;
 }
-
-.header {
+.popup_content > ul > li {
   width: 100%;
-  text-allign: Center;
-  position: fixed;
-  background-color: rgb(40, 40, 40);
-  color: white;
+  margin: var(--8px);
 }
-
-.progress-bar {
-  height: 0.5rem;
-  width: 0%;
-  position: fixed;
-  background-color: hotpink;
+.popup_content > ul > li > button {
+  width: 100%;
 }
-
-.hero1 {
-  background-image: url("https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODQ1MTcyMTd8&ixlib=rb-4.0.3&q=85"); /*photo by okeykat for Unsplash */
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 0;
-  color: black;
-  -webkit-text-stroke: 1px hotpink;
-  text-stroke: 1px hotpink;
-}
-
-.hero1 p {
-  font-size: 1.5rem;
+.popup_content > button {
+  position: relative;
+  z-index: 5;
 }

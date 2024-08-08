@@ -74,8 +74,25 @@
 
 	<div class="background_blue_orange_down">
 		<button class="button mishamol_start_button">
-			<a href="https://t.me/mishamol" target="_blank">fine</a>
+			<a data-popup="contact" class="popup_button">contact</a>
 		</button>
+	</div>
+
+	<div class="popup popup_close" data-popup="contact">
+		<div class="popup_content">
+			<ul>
+				<li>
+					<button class="button">
+						<a href="https://t.me/mishamol" target="_blank">telegram</a>
+					</button>
+				</li>
+				<li>
+					<button class="button">
+						<a href="mailto: web@mishamol.ru" target="_blank">mail</a>
+					</button>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 
@@ -211,17 +228,52 @@
 			<h1>Everything</h1>
 			<p>Fonts, stickers, icons</p>
 			<button class="button">
-				<a>download</a>
+				<a data-popup="download" class="popup_button">download</a>
 			</button>
 		</div>
 	</div>
 
+	<div class="popup popup_close" data-popup="download">
+		<div class="popup_content">
+			<ul>
+				<li>
+					<div class="navbar_pages_divider"></div>
+					<p class="navbar_pages_title">style</p>
+				</li>
+				<li>
+					<button class="button">
+						<a href="https://archive.mishamol.ru/fonts/" target="_blank">fonts</a>
+					</button>
+				</li>
+				<li>
+					<button class="button">
+						<a href="https://archive.mishamol.ru/stickers/" target="_blank">stickers</a>
+					</button>
+				</li>
+				<li>
+					<button class="button">
+						<a href="https://archive.mishamol.ru/icons/" target="_blank">icons</a>
+					</button>
+				</li>
+				<li>
+					<div class="navbar_pages_divider"></div>
+					<p class="navbar_pages_title">mods</p>
+				</li>
+				<li>
+					<button class="button">
+						<a href="https://archive.mishamol.ru/minecraft/" target="_blank">minecraft</a>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-	
+
+
 	<div style="position: relative; height: 0;">
 		<img src="img/sticker_mishamol_cool.png" class="mishamol_sticker_cool draggable">
 	</div>
-	
+
 	<div class="background_orange_transparent_up">
 	</div>
 
