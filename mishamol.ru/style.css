@@ -302,10 +302,10 @@ p {
   width: 100%;
   margin: var(--8px);
 }
-.navbar_pages > li > ul > li > button {
+.navbar_pages > li > ul > li > .button {
   width: 100%;
 }
-.navbar_pages > li > button {
+.navbar_pages > li > .button {
   position: relative;
   z-index: 7;
 }
@@ -352,13 +352,16 @@ p {
 }
 
 .button {
+  display: inline-block;
   background-color: #FFFFFF;
   color: #292B3E;
-  padding: var(--2px) var(--40px) var(--12px);
+  padding: 0 var(--40px) var(--12px);
   border: none;
   border-radius: var(--64px);
   cursor: pointer;
   font-size: var(--50px);
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: -webkit-transform 0.3s ease-in-out;
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
@@ -366,14 +369,21 @@ p {
   white-space: nowrap;
   -webkit-tap-highlight-color: transparent;
 }
-.button.active {
-  background-color: #292B3E;
-  color: #FFFFFF;
+
+.button:visited {
+  outline: none;
+  color: #292B3E;
 }
+
 .button:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   background-color: #FF3D00;
+  color: #FFFFFF;
+}
+
+.button:active {
+  background-color: #292B3E;
   color: #FFFFFF;
 }
 
@@ -631,6 +641,9 @@ p {
   margin: auto;
   display: block;
   z-index: 3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .mishamol_sticker_pose {

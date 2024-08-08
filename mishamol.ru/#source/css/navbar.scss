@@ -94,7 +94,7 @@
 					width: 100%;
 					margin: var(--8px);
 
-					>button {
+					>.button {
 						width: 100%;
 					}
 
@@ -103,7 +103,7 @@
 				}
 			}
 
-			>button {
+			>.button {
 				position: relative;
 				z-index: 7;
 			}
